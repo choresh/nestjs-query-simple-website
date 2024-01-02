@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'nestjs-query-simple',
   tagline: 'Creation of NestJS app with GraphQL + MongoDb + Nestjs-query is simple',
-  favicon: 'img/favicon.ico', // TODO
+  favicon: 'img/favicon.ico',
   url: 'https://your-docusaurus-site.example.com', // TODO
   baseUrl: '/',
   onBrokenLinks: 'throw',
