@@ -45,6 +45,10 @@ const config = {
             label: 'GitHub',
             href: 'https://www.npmjs.com/package/nestjs-query-simple',
           },
+          {
+            label: 'NPM',
+            href: 'https://www.npmjs.com/package/nestjs-query-simple',
+          },
         ],
       },
       footer: {
