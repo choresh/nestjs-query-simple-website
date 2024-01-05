@@ -28,7 +28,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'MongoDb',
+    title: 'MongoDB',
     Svg: require('@site/static/img/mongodb.svg').default,
     description: (
       <>
