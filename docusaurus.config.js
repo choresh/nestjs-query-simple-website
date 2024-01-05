@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'nestjs-query-simple',
-  tagline: 'Creation of NestJS app with GraphQL + MongoDb + Nestjs-query is simple',
+  tagline: 'Creation of NestJS app with GraphQL + MongoDB + Nestjs-query is simple',
   favicon: 'img/favicon.ico',
   url: 'https://your-docusaurus-site.example.com', // TODO
   baseUrl: '/',
