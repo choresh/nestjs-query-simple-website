@@ -19,7 +19,8 @@ Get started by **using our 'minimal-demo-app'**.
 - Any tool to execute the commands given below (Powershell, Terminal, or any other integrated terminal of your code editor).
 
 ### Create local copy of the minimal demo app
-Create local copy of [minimal-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/minimal-demo-app).
+* Clone the [nestjs-query-simple]('https://github.com/choresh/nestjs-query-simple') repository.
+* Create local copy of sub-folder 'minimal-demo-app'.
 
 ### Install the app
 Run this command within the app root folder:
@@ -202,17 +203,17 @@ query GetFilteredAndSortedExampleItems {
 ### Fix app name
 At 'package.json' file (at app root folder) - replace values of name, author, etc.
 ### Fix resource name
-#### Within TS files:
+#### Within TS files
 * Replace any occurrence of 'ExampleItem' (match case, not match whole word) with name of your resource, starting with upper case (e.g. 'User').
 * Replace any occurrence of 'exampleItem' (match case, not match whole word) with name of your resource, starting with lower case (e.g. 'user').
-* The later 's' (plural form of the resource) should remain (e.g. 'ExampleItemsResolver' should changed to 'UsersResolver').
-#### At file system:
+* The later 's' (plural form of the resource name) soppused to remain (e.g. 'ExampleItemsResolver' should changed to 'UsersResolver').
+#### At file system
 * Change name of folder 'exampleItems' - to name (plural) of your resource (e.g. 'users').
 * Change name of files started with 'exampleItem' - to start with name (singular) of your resource (e.g. 'user').
 ### Use your app
 Install/build/run/use your app, at same manner as explained with the demo app. 
 Validate that correspond collection is updated in your MongoDB.
-### Add more resources:
+### Add more resources
 Repeat steps at 'Fix resource name' section.
 
 ## Test your app
