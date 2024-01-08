@@ -43,7 +43,7 @@ const config = {
           },
           {
             label: 'GitHub',
-            href: 'https://www.npmjs.com/package/nestjs-query-simple',
+            href: 'https://github.com/choresh/nestjs-query-simple',
           },
           {
             label: 'NPM',
