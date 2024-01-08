@@ -3,8 +3,8 @@ sidebar_position: 1
 ---
 
 # Intro
-
-Let's discover **the 'nestjs-query-simple' in less than 5 minutes**.
+* The NPM package 'nestjs-query-simple' is thin layer built on top of Nestjs-query, enables easy definition of MongoDB/GraphQL asspects within NestJS apps.
+* Let's discover **the 'nestjs-query-simple' in less than 5 minutes**.
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ Get started by **using our 'minimal-demo-app'**.
 - [Compass](https://www.mongodb.com/products/compass) (recommended).
 - Any tool to execute the commands given below (Powershell, Terminal, or any other integrated terminal of your code editor).
 
-### Create local copy of the app
+### Create local copy of the minimal demo app
 Create local copy of [minimal-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/minimal-demo-app).
 
 ### Install the app
@@ -198,4 +198,32 @@ query GetFilteredAndSortedExampleItems {
 }
 ```
 
+## Create your own app
+### Fix app name
+At 'package.json' file (at app root folder) - replace values of name, author, etc.
+### Fix resource name
+#### Within TS files:
+* Replace any occurrence of 'ExampleItem' (match case, not match whole word) with name of your resource, starting with upper case (e.g. 'User').
+* Replace any occurrence of 'exampleItem' (match case, not match whole word) with name of your resource, starting with lower case (e.g. 'user').
+* The later 's' (plural form of the resource) should remain (e.g. 'ExampleItemsResolver' should changed to 'UsersResolver').
+#### At file system:
+* Change name of folder 'exampleItems' - to name (plural) of your resource (e.g. 'users').
+* Change name of files started with 'exampleItem' - to start with name (singular) of your resource (e.g. 'user').
+### Use your app
+Install/build/run/use your app, at same manner as explained with the demo app. 
+Validate that correspond collection is updated in your MongoDB.
+### Add more resources:
+Repeat steps at 'Fix resource name' section.
 
+## Test your app
+Run those commands within the app's root folder:
+```bash
+# unit tests
+npm run test
+
+# e2e tests
+npm run test:e2e
+
+# test coverage
+npm run test:cov
+```
