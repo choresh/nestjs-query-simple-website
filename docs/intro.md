@@ -3,8 +3,8 @@ sidebar_position: 1
 ---
 
 # Intro
-* The NPM package 'nestjs-query-simple' is thin layer built on top of Nestjs-query, enables easy definition of MongoDB/GraphQL asspects within NestJS apps.
-* Let's discover **the 'nestjs-query-simple' in less than 5 minutes**.
+* The NPM package 'nestjs-query-simple' is a thin layer built on top of Nestjs-query, enabling easy definition of MongoDB/GraphQL aspects within NestJS apps.
+* Let's discover **'nestjs-query-simple' in less than 5 minutes**.
 
 ## Getting Started
 
@@ -13,14 +13,14 @@ Get started by **using our 'minimal-demo-app'**.
 ### What you'll need
 
 - [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+  - When installing Node.js, it's recommended to check all checkboxes related to dependencies.
 - [MongoDB](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/).
 - [Compass](https://www.mongodb.com/products/compass) (recommended).
 - Any tool to execute the commands given below (Powershell, Terminal, or any other integrated terminal of your code editor).
 
-### Create local copy of the minimal demo app
-* Clone the [nestjs-query-simple]('https://github.com/choresh/nestjs-query-simple') repository.
-* Create local copy of sub-folder 'minimal-demo-app'.
+### Create a local copy of the minimal demo app
+* Clone the [nestjs-query-simple](https://github.com/choresh/nestjs-query-simple) repository.
+* Create a local copy of the sub-folder 'minimal-demo-app'.
 
 ### Install the app
 Run this command within the app root folder:
@@ -42,10 +42,10 @@ npm run start
 
 ## Use the app
 
-### Send mutations and queries, via GraphQL playground
-* Open browser, and navigate to http://localhost:3000/graphql.
-* Send mutations and queries, like the examples bellow.
-* You can also track the relevant data changes in your MongoDB (e.g. via [Compass](https://www.mongodb.com/products/compass)).
+### Send mutations and queries via GraphQL playground
+* Open a browser and navigate to [http://localhost:3000/](http://localhost:3000/).
+* Send mutations and queries, like the examples below.
+* You can also track the relevant data changes in your MongoDB (e.g., via [Compass](https://www.mongodb.com/products/compass)).
 
 ### GraphQL mutations/queries examples
 
@@ -174,7 +174,7 @@ query GetExampleItems {
 }
 ```
 
-Get a paginated list of example items with specific filter, sorting, and paging settings
+Get a paginated list of example items with specific filter, sorting, and paging settings:
 ```graphql
 query GetFilteredAndSortedExampleItems {
   exampleItems(
@@ -201,20 +201,26 @@ query GetFilteredAndSortedExampleItems {
 
 ## Create your own app
 ### Fix app name
-At 'package.json' file (at app root folder) - replace values of name, author, etc.
+In the 'package.json' file (at the app's root folder) - replace values of name, author, etc.
 ### Fix resource name
 #### Within TS files
-* Replace any occurrence of 'ExampleItem' (match case, not match whole word) with name of your resource, starting with upper case (e.g. 'User').
-* Replace any occurrence of 'exampleItem' (match case, not match whole word) with name of your resource, starting with lower case (e.g. 'user').
-* The later 's' (plural form of the resource name) soppused to remain (e.g. 'ExampleItemsResolver' should changed to 'UsersResolver').
-#### At file system
-* Change name of folder 'exampleItems' - to name (plural) of your resource (e.g. 'users').
-* Change name of files started with 'exampleItem' - to start with name (singular) of your resource (e.g. 'user').
+* Replace any occurrence of 'ExampleItem' (match case, not match whole word) with the name of your resource, starting with an uppercase (e.g., 'User').
+* Replace any occurrence of 'exampleItem' (match case, not match whole word) with the name of your resource, starting with a lowercase (e.g., 'user').
+* The later 's' (plural form of the resource name) is supposed to remain (e.g., 'ExampleItemsResolver' should be changed to 'UsersResolver').
+#### In the file system
+* Change the name of the folder 'exampleItems' - to the name (plural) of your resource (e.g., 'users').
+* Change the name of files started with 'exampleItem' - to start with the name (singular) of your resource (e.g., 'user').
+### Fix resource fields
+* Remove example fields ('exampleProperty1'/'exampleProperty2') from Datos/Dtos classes.
+*  Set your desired fields.
+* For more complicated types (Enum/Int/Object...), or complicated relations (one-to-many, many-to-one, one-to-one), or other field spesifications (nullable, primaryKey...) - see examples at Datos/Dtos classes, at 'advanced-demo-app', or explore the optional options of the @DatoProp() and @DtoProp() decorators.
+### Add custom mutations/queries
+Standard CRUD operations are supported 'out-of-the-box' by 'nestjs-query-simple', in case you want to add non-standard (custom) mutations/queries - see example method 'UsersResolver.demonstrateComplexQuery()', at 'advanced-demo-app'.
 ### Use your app
-Install/build/run/use your app, at same manner as explained with the demo app. 
-Validate that correspond collection is updated in your MongoDB.
+* Install/build/run/use your app, in the same manner as explained with the demo app.
+* Validate that the corresponding collection is updated in your MongoDB.
 ### Add more resources
-Repeat steps at 'Fix resource name' section.
+Get fresh copy of folder 'exampleItems', and repeat steps in the 'Fix resource name', 'Fix resource fields' and 'Add custom mutations/queries' sections.
 
 ## Test your app
 Run those commands within the app's root folder:
