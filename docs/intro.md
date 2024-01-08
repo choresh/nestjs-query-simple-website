@@ -23,7 +23,7 @@ Get started by **using our 'minimal-demo-app'**.
 * Create a local copy of the sub-folder 'minimal-demo-app'.
 
 ### Install the app
-Run this command within the app root folder:
+Run this command within the app's root folder:
 ``` bash
 npm install
 ```
@@ -35,7 +35,7 @@ npm run build
 ```
 
 ### Run the app
-Run those commands within the app's root folder:
+Run this commands within the app's root folder:
 ``` bash
 npm run start
 ```
