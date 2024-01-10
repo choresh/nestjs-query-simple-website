@@ -1,0 +1,278 @@
+<svg version="1.1" baseProfile="full" width="861.0" height="783.0" viewbox="0 0 861 783" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+<desc >#.interface: fill=lightblue
+#.enumeration: fill=lightgreen
+#.type: fill=lightgray
+[SprintDato|+name: string;+taskSprintJunctions: Ref&lt;TaskSprintJunctionDato&gt;\[\]|]
+[SprintDato]  - 0..* [TaskSprintJunctionDato]
+[TaskSprintJunctionDato|+taskId: string;+sprintId: string;+task: Ref&lt;TaskDato&gt;;+sprint: Ref&lt;SprintDato&gt;|]
+[TaskSprintJunctionDato] 0..* -  [TaskDato]
+[TaskDato|+name: string;+userId: string;+user: Ref&lt;UserDato&gt;;+details: TaskDetailsDato;+comments: TaskCommentDato\[\];+taskSprintJunctions: Ref&lt;TaskSprintJunctionDato&gt;\[\]|]
+[TaskDato] 0..* -  [UserDato]
+[TaskDato]  -  [TaskDetailsDato]
+[TaskDato]  - 0..* [TaskCommentDato]
+[TenantBillingDato|+taxNumber: string;+phoneNumber: string;+tenant: Ref&lt;TenantDato&gt;;+tenantId: string|]
+[TenantBillingDato]  -  [TenantDato]
+[TenantDato|+name: string;+users: Ref&lt;UserDato&gt;\[\];+tenantBilling?: Ref&lt;TenantBillingDato&gt;;+tenantBillingId?: string|]
+[TenantDato]  - 0..* [UserDato]
+[UserDato|+name: string;+tasks: Ref&lt;TaskDato&gt;\[\];+tenantId: string;+tenant: Ref&lt;TenantDato&gt;;+gender: Gender;+age: number|]
+[&lt;enumeration&gt;Gender|female;male]
+[UserDato]  -  [Gender]
+[TaskCommentDato|+text: string|]
+[TaskDetailsDato|+title: string;+description: string|]</desc>
+<g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="normal" font-style="normal">
+<g font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+<g stroke="transparent" fill="transparent">
+<rect x="0.0" y="0.0" height="783.0" width="861.0" stroke="none"></rect>
+</g>
+<g transform="translate(8, 8)" fill="#33322E">
+<g transform="translate(20, 20)" fill="#33322E" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal">
+<text x="552.0" y="117.0" stroke="none">0..*</text>
+<path d="M587.0 85.0 L587 105 L587 125 L587.0 125.0 " fill="none"></path>
+<text x="595.0" y="260.0" stroke="none">0..*</text>
+<path d="M587.0 240.0 L587 260 L587 280 L587.0 280.0 " fill="none"></path>
+<text x="429.4" y="445.0" stroke="none">0..*</text>
+<path d="M421.4 425.0 L375.75 445 L277 488.2396449704142 L277.0 488.2 " fill="none"></path>
+<path d="M529.6 425.0 L513.75 445 L513.75 495 L513.8 495.0 " fill="none"></path>
+<text x="728.3" y="494.5" stroke="none">0..*</text>
+<path d="M691.4 425.0 L720.25 445 L720.25 502.5 L720.3 502.5 " fill="none"></path>
+<path d="M164.5 240.0 L164.5 260 L164.5 295 L164.5 295.0 " fill="none"></path>
+<text x="129.5" y="457.0" stroke="none">0..*</text>
+<path d="M164.5 410.0 L164.5 445 L164.5 465 L164.5 465.0 " fill="none"></path>
+<path d="M164.5 610.0 L164.5 630 L164.5 650 L164.5 650.0 " fill="none"></path>
+<g data-name="SprintDato">
+<g fill="#eee8d5" stroke="#33322E" data-name="SprintDato">
+<rect x="369.0" y="0.0" height="85.0" width="436.0" data-name="SprintDato"></rect>
+<path d="M369.0 31.0 L805.0 31.0" fill="none" data-name="SprintDato"></path>
+<path d="M369.0 77.0 L805.0 77.0" fill="none" data-name="SprintDato"></path>
+</g>
+<g transform="translate(369, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="SprintDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="SprintDato">
+<a id="src/sprints/datos/sprint.dato.ts.SprintDato" xlink:href="src/sprints/datos/sprint.dato.ts"><text x="210.0" y="13.5" stroke="none" text-anchor="middle" data-name="SprintDato">SprintDato</text></a>
+
+</g>
+</g>
+<g transform="translate(369, 31)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="SprintDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="SprintDato">
+<text x="0.0" y="13.5" stroke="none" data-name="SprintDato">+name: string</text>
+<text x="0.0" y="28.5" stroke="none" data-name="SprintDato">+taskSprintJunctions: Ref&lt;TaskSprintJunctionDato&gt;[]</text>
+
+</g>
+</g>
+<g transform="translate(369, 77)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="SprintDato">
+<g transform="translate(8, 8)" fill="#33322E" data-name="SprintDato">
+
+</g>
+</g>
+</g>
+<g data-name="TaskSprintJunctionDato">
+<g fill="#eee8d5" stroke="#33322E" data-name="TaskSprintJunctionDato">
+<rect x="482.0" y="125.0" height="115.0" width="210.0" data-name="TaskSprintJunctionDato"></rect>
+<path d="M482.0 156.0 L692.0 156.0" fill="none" data-name="TaskSprintJunctionDato"></path>
+<path d="M482.0 232.0 L692.0 232.0" fill="none" data-name="TaskSprintJunctionDato"></path>
+</g>
+<g transform="translate(482, 125)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TaskSprintJunctionDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TaskSprintJunctionDato">
+<a id="src/taskSprintJunctions/datos/taskSprintJunction.dato.ts.TaskSprintJunctionDato" xlink:href="src/taskSprintJunctions/datos/taskSprintJunction.dato.ts"><text x="97.0" y="13.5" stroke="none" text-anchor="middle" data-name="TaskSprintJunctionDato">TaskSprintJunctionDato</text></a>
+
+</g>
+</g>
+<g transform="translate(482, 156)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TaskSprintJunctionDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TaskSprintJunctionDato">
+<text x="0.0" y="13.5" stroke="none" data-name="TaskSprintJunctionDato">+taskId: string</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TaskSprintJunctionDato">+sprintId: string</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TaskSprintJunctionDato">+task: Ref&lt;TaskDato&gt;</text>
+<text x="0.0" y="58.5" stroke="none" data-name="TaskSprintJunctionDato">+sprint: Ref&lt;SprintDato&gt;</text>
+
+</g>
+</g>
+<g transform="translate(482, 232)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TaskSprintJunctionDato">
+<g transform="translate(8, 8)" fill="#33322E" data-name="TaskSprintJunctionDato">
+
+</g>
+</g>
+</g>
+<g data-name="TaskDato">
+<g fill="#eee8d5" stroke="#33322E" data-name="TaskDato">
+<rect x="369.0" y="280.0" height="145.0" width="436.0" data-name="TaskDato"></rect>
+<path d="M369.0 311.0 L805.0 311.0" fill="none" data-name="TaskDato"></path>
+<path d="M369.0 417.0 L805.0 417.0" fill="none" data-name="TaskDato"></path>
+</g>
+<g transform="translate(369, 280)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TaskDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TaskDato">
+<a id="src/tasks/datos/task.dato.ts.TaskDato" xlink:href="src/tasks/datos/task.dato.ts"><text x="210.0" y="13.5" stroke="none" text-anchor="middle" data-name="TaskDato">TaskDato</text></a>
+
+</g>
+</g>
+<g transform="translate(369, 311)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TaskDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TaskDato">
+<text x="0.0" y="13.5" stroke="none" data-name="TaskDato">+name: string</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TaskDato">+userId: string</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TaskDato">+user: Ref&lt;UserDato&gt;</text>
+<text x="0.0" y="58.5" stroke="none" data-name="TaskDato">+details: TaskDetailsDato</text>
+<text x="0.0" y="73.5" stroke="none" data-name="TaskDato">+comments: TaskCommentDato[]</text>
+<text x="0.0" y="88.5" stroke="none" data-name="TaskDato">+taskSprintJunctions: Ref&lt;TaskSprintJunctionDato&gt;[]</text>
+
+</g>
+</g>
+<g transform="translate(369, 417)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TaskDato">
+<g transform="translate(8, 8)" fill="#33322E" data-name="TaskDato">
+
+</g>
+</g>
+</g>
+<g data-name="UserDato">
+<g fill="#eee8d5" stroke="#33322E" data-name="UserDato">
+<rect x="52.0" y="465.0" height="145.0" width="225.0" data-name="UserDato"></rect>
+<path d="M52.0 496.0 L277.0 496.0" fill="none" data-name="UserDato"></path>
+<path d="M52.0 602.0 L277.0 602.0" fill="none" data-name="UserDato"></path>
+</g>
+<g transform="translate(52, 465)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="UserDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="UserDato">
+<a id="src/users/datos/user.dato.ts.UserDato" xlink:href="src/users/datos/user.dato.ts"><text x="104.5" y="13.5" stroke="none" text-anchor="middle" data-name="UserDato">UserDato</text></a>
+
+</g>
+</g>
+<g transform="translate(52, 496)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="UserDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="UserDato">
+<text x="0.0" y="13.5" stroke="none" data-name="UserDato">+name: string</text>
+<text x="0.0" y="28.5" stroke="none" data-name="UserDato">+tasks: Ref&lt;TaskDato&gt;[]</text>
+<text x="0.0" y="43.5" stroke="none" data-name="UserDato">+tenantId: string</text>
+<text x="0.0" y="58.5" stroke="none" data-name="UserDato">+tenant: Ref&lt;TenantDato&gt;</text>
+<text x="0.0" y="73.5" stroke="none" data-name="UserDato">+gender: Gender</text>
+<text x="0.0" y="88.5" stroke="none" data-name="UserDato">+age: number</text>
+
+</g>
+</g>
+<g transform="translate(52, 602)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="UserDato">
+<g transform="translate(8, 8)" fill="#33322E" data-name="UserDato">
+
+</g>
+</g>
+</g>
+<g data-name="TaskDetailsDato">
+<g fill="#eee8d5" stroke="#33322E" data-name="TaskDetailsDato">
+<rect x="430.3" y="495.0" height="85.0" width="167.0" data-name="TaskDetailsDato"></rect>
+<path d="M430.3 526.0 L597.3 526.0" fill="none" data-name="TaskDetailsDato"></path>
+<path d="M430.3 572.0 L597.3 572.0" fill="none" data-name="TaskDetailsDato"></path>
+</g>
+<g transform="translate(430.25, 495)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TaskDetailsDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TaskDetailsDato">
+<a id="src/tasks/datos/embeddeds/task-details.dato.ts.TaskDetailsDato" xlink:href="src/tasks/datos/embeddeds/task-details.dato.ts"><text x="75.5" y="13.5" stroke="none" text-anchor="middle" data-name="TaskDetailsDato">TaskDetailsDato</text></a>
+
+</g>
+</g>
+<g transform="translate(430.25, 526)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TaskDetailsDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TaskDetailsDato">
+<text x="0.0" y="13.5" stroke="none" data-name="TaskDetailsDato">+title: string</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TaskDetailsDato">+description: string</text>
+
+</g>
+</g>
+<g transform="translate(430.25, 572)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TaskDetailsDato">
+<g transform="translate(8, 8)" fill="#33322E" data-name="TaskDetailsDato">
+
+</g>
+</g>
+</g>
+<g data-name="TaskCommentDato">
+<g fill="#eee8d5" stroke="#33322E" data-name="TaskCommentDato">
+<rect x="637.3" y="502.5" height="70.0" width="166.0" data-name="TaskCommentDato"></rect>
+<path d="M637.3 533.5 L803.3 533.5" fill="none" data-name="TaskCommentDato"></path>
+<path d="M637.3 564.5 L803.3 564.5" fill="none" data-name="TaskCommentDato"></path>
+</g>
+<g transform="translate(637.25, 502.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TaskCommentDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TaskCommentDato">
+<a id="src/tasks/datos/embeddeds/task-comment.dato.ts.TaskCommentDato" xlink:href="src/tasks/datos/embeddeds/task-comment.dato.ts"><text x="75.0" y="13.5" stroke="none" text-anchor="middle" data-name="TaskCommentDato">TaskCommentDato</text></a>
+
+</g>
+</g>
+<g transform="translate(637.25, 533.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TaskCommentDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TaskCommentDato">
+<text x="0.0" y="13.5" stroke="none" data-name="TaskCommentDato">+text: string</text>
+
+</g>
+</g>
+<g transform="translate(637.25, 564.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TaskCommentDato">
+<g transform="translate(8, 8)" fill="#33322E" data-name="TaskCommentDato">
+
+</g>
+</g>
+</g>
+<g data-name="TenantBillingDato">
+<g fill="#eee8d5" stroke="#33322E" data-name="TenantBillingDato">
+<rect x="52.0" y="125.0" height="115.0" width="225.0" data-name="TenantBillingDato"></rect>
+<path d="M52.0 156.0 L277.0 156.0" fill="none" data-name="TenantBillingDato"></path>
+<path d="M52.0 232.0 L277.0 232.0" fill="none" data-name="TenantBillingDato"></path>
+</g>
+<g transform="translate(52, 125)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TenantBillingDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TenantBillingDato">
+<a id="src/tenantBillings/datos/tenantBilling.dato.ts.TenantBillingDato" xlink:href="src/tenantBillings/datos/tenantBilling.dato.ts"><text x="104.5" y="13.5" stroke="none" text-anchor="middle" data-name="TenantBillingDato">TenantBillingDato</text></a>
+
+</g>
+</g>
+<g transform="translate(52, 156)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TenantBillingDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TenantBillingDato">
+<text x="0.0" y="13.5" stroke="none" data-name="TenantBillingDato">+taxNumber: string</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TenantBillingDato">+phoneNumber: string</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TenantBillingDato">+tenant: Ref&lt;TenantDato&gt;</text>
+<text x="0.0" y="58.5" stroke="none" data-name="TenantBillingDato">+tenantId: string</text>
+
+</g>
+</g>
+<g transform="translate(52, 232)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TenantBillingDato">
+<g transform="translate(8, 8)" fill="#33322E" data-name="TenantBillingDato">
+
+</g>
+</g>
+</g>
+<g data-name="TenantDato">
+<g fill="#eee8d5" stroke="#33322E" data-name="TenantDato">
+<rect x="0.0" y="295.0" height="115.0" width="329.0" data-name="TenantDato"></rect>
+<path d="M0.0 326.0 L329.0 326.0" fill="none" data-name="TenantDato"></path>
+<path d="M0.0 402.0 L329.0 402.0" fill="none" data-name="TenantDato"></path>
+</g>
+<g transform="translate(0, 295)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TenantDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TenantDato">
+<a id="src/tenants/datos/tenant.dato.ts.TenantDato" xlink:href="src/tenants/datos/tenant.dato.ts"><text x="156.5" y="13.5" stroke="none" text-anchor="middle" data-name="TenantDato">TenantDato</text></a>
+
+</g>
+</g>
+<g transform="translate(0, 326)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TenantDato">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TenantDato">
+<text x="0.0" y="13.5" stroke="none" data-name="TenantDato">+name: string</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TenantDato">+users: Ref&lt;UserDato&gt;[]</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TenantDato">+tenantBilling?: Ref&lt;TenantBillingDato&gt;</text>
+<text x="0.0" y="58.5" stroke="none" data-name="TenantDato">+tenantBillingId?: string</text>
+
+</g>
+</g>
+<g transform="translate(0, 402)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TenantDato">
+<g transform="translate(8, 8)" fill="#33322E" data-name="TenantDato">
+
+</g>
+</g>
+</g>
+<g data-name="Gender">
+<g fill="lightgreen" stroke="#33322E" data-name="Gender">
+<rect x="127.0" y="650.0" height="77.0" width="75.0" data-name="Gender"></rect>
+<path d="M127.0 681.0 L202.0 681.0" fill="none" data-name="Gender"></path>
+</g>
+<g transform="translate(127, 650)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Gender">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Gender">
+<a id="src/users/datos/user.dato.ts.Gender" xlink:href="src/users/datos/user.dato.ts"><text x="29.5" y="13.5" stroke="none" text-anchor="middle" data-name="Gender">Gender</text></a>
+
+</g>
+</g>
+<g transform="translate(127, 681)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Gender">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Gender">
+<text x="0.0" y="13.5" stroke="none" data-name="Gender">female</text>
+<text x="0.0" y="28.5" stroke="none" data-name="Gender">male</text>
+
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
