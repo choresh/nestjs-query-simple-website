@@ -4,9 +4,9 @@ sidebar_position: 5
 
 # Extras
 
-## NestJs docs, code and samples
-* [NestJs docs](https://docs.nestjs.com).
-* [NestJs code and samples](https://github.com/nestjs/nest).
+## NestJS docs, code and samples
+* [NestJS docs](https://docs.nestjs.com).
+* [NestJS code and samples](https://github.com/nestjs/nest).
 
 ## Nestjs-query docs, code and samples
 * [Getting started](https://tripss.github.io/nestjs-query/docs/introduction/getting-started).
