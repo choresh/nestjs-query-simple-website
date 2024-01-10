@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Create your own app
@@ -26,7 +26,8 @@ sidebar_position: 2
 Standard CRUD operations are supported 'out-of-the-box' by 'nestjs-query-simple', in case you want to add non-standard (custom) mutations/queries - see example method 'UsersResolver.demonstrateComplexQuery()', at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
 
 ## Use your app
-* Install/build/run/use your app, in the same manner as explained with the demo app.
+* Install/build/run/use your app, in the same manner as explained in the [Intro](https://nestjs-query-simple-website.vercel.app/docs/intro) page.
+* Obviously you need to prepare/test your own mutations and queries at GraphQL playground.
 * Validate that the corresponding collection is updated in your MongoDB.
 
 ## Add more resources
@@ -60,3 +61,18 @@ npm run test:e2e
 # test coverage
 npm run test:cov
 ```
+
+## Running the app
+Run those commands within the app's root folder:
+``` bash
+# development
+npm run start
+
+# watch mode
+npm run start:dev
+
+# production mode
+npm run start:prod
+```
+
+## Fix/add tests
