@@ -74,5 +74,3 @@ npm run start:dev
 # production mode
 npm run start:prod
 ```
-
-## Fix/add tests
