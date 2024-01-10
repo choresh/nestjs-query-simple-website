@@ -1,10 +1,9 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Intro
-* The NPM package 'nestjs-query-simple' is a thin layer built on top of Nestjs-query, enabling easy definition of MongoDB/GraphQL aspects within NestJS apps.
-* Let's discover **'nestjs-query-simple' in less than 5 minutes**.
+Let's discover **'nestjs-query-simple' in less than 5 minutes**.
 
 ## Getting Started
 
