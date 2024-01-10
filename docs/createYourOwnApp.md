@@ -30,7 +30,23 @@ Standard CRUD operations are supported 'out-of-the-box' by 'nestjs-query-simple'
 * Validate that the corresponding collection is updated in your MongoDB.
 
 ## Add more resources
-Get fresh copy of folder 'exampleItems', and repeat steps in the 'Fix resource name', 'Fix resource fields' and 'Add custom mutations/queries' sections.
+* Get fresh copy of folder 'exampleItems', and repeat steps in the 'Fix resource name', 'Fix resource fields' and 'Add custom mutations/queries' sections.
+* Add name of your new resource's module, to 'imports' list, at definition of main module of your app (file 'src/app.module.ts'), as shown here:
+    ``` ts
+    @Module({
+    imports: [
+        AppHelper.forRoot('mongodb://localhost', console),
+        GraphQLModule.forRoot<ApolloDriverConfig>({
+        driver: ApolloDriver,
+        autoSchemaFile: true
+        }),
+        ExampleItemsModule, // You probebly already replaced 'ExampleItem' with another name.
+        // Add here your new resource's module.
+    ],
+    controllers: [],
+    providers: []
+    })
+    ```
 
 ## Test your app
 Run those commands within the app's root folder:
