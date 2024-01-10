@@ -7,5 +7,6 @@ sidebar_position: 3
 * Mean time - fill free to explore the [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
 
 
-### DATOs (MongoDB/GraphQL objects) diagram
-<img src="../static/img/datos.svg">
+### DATOs (MongoDB/GraphQL objects)
+* See diagram [here](../static/img/datos.svg).
+
