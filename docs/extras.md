@@ -55,7 +55,7 @@ Options:
 
 More details about migration infra see here: [migrate-mongoose](https://www.npmjs.com/package/migrate-mongoose?activeTab=readme).
 
-Sample of (modified) migration file (in this sample - change property name from 'department' to 'division' at 'up' migration, and reverse it at 'down' migration):
+Example of migration file (in this sample - we change property name from 'department' to 'division' at 'up' migration, and reverse it at 'down' migration):
 ``` javascript
 const mongoose = require('mongoose')
 const typegoose = require('@typegoose/typegoose')

@@ -31,7 +31,7 @@ sidebar_position: 4
 * The generation done via static code analysis, i.e. the generation can be done without running the app.
 * To generate/update the SDK - run this command within the app's root folder:
     ```
-    $ npm run generate-graphql-ts
+    $ npm run generate
     ```
 * The generated code will be file 'generatedApi.ts', within the app's root folder.
 * You can add custom mutations/queries in folder 'customOperations' (e.g. versions that not ask to return all the entitie's properties), and after generation - the SDK will expose them.
