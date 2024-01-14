@@ -1,8 +1,4 @@
-[nestjs-query-simple](README.md) / Exports
-
-# nestjs-query-simple
-
-## Table of contents
+# Table of contents
 
 ### Classes
 
