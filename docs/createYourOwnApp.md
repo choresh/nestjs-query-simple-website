@@ -19,8 +19,15 @@ sidebar_position: 3
 
 ## Fix resource fields
 * Remove example fields ('exampleProperty1'/'exampleProperty2') from Datos/Dtos classes.
-*  Set your desired fields.
-* For more complicated types (Enum/Int/Object...), or complicated relations (one-to-many, many-to-one, one-to-one), or other field spesifications (nullable, primaryKey...) - see examples at Datos/Dtos classes, at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app), or explore the optional options of the @DatoProp() and @DtoProp() decorators.
+* Set your desired fields.
+* For more complicated types (Enum/Int/Object...), or complicated relations (one-to-many, many-to-one, one-to-one), or other field spesifications (nullable, primaryKey...) - see examples at Datos/Dtos classes, at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app), or browse code docomentation:
+    * Dato:
+        * [@Dato()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#dato)
+        * [@DatoProp()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#datoprop)
+    * Dto
+        * [@InputDto()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#inputdto)
+        * [@UpdateDto()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#updatedto)
+        * [@DtoProp()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#dtoprop)
 
 ## Add custom mutations/queries
 Standard CRUD operations are supported 'out-of-the-box' by 'nestjs-query-simple', in case you want to add non-standard (custom) mutations/queries - see example method 'UsersResolver.demonstrateComplexQuery()', at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
