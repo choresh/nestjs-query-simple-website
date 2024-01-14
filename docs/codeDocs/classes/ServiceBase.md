@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / ServiceBase
-
 # Class: ServiceBase\<Dato\>
 
 Abstract base class for services that use TypegooseQueryService.

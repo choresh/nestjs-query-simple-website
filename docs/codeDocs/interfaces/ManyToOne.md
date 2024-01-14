@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / ManyToOne
-
 # Interface: ManyToOne
 
 Options for defining a many-to-one relation.

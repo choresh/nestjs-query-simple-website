@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / OneToMany
-
 # Interface: OneToMany
 
 Options for defining a one-to-many relation.

@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / IdentifiableDato
-
 # Class: IdentifiableDato
 
 Base class for identifiable DATO.

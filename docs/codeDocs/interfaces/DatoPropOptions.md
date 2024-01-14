@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / DatoPropOptions
-
 # Interface: DatoPropOptions
 
 Options for the `DatoProp` decorator.

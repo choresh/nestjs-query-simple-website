@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / AppHelper
-
 # Class: AppHelper
 
 Helper class for configuring the TypegooseModule with a logger.

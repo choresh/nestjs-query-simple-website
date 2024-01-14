@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / Relation
-
 # Interface: Relation
 
 Options for defining a relation.

@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / RelationMetadata
-
 # Interface: RelationMetadata
 
 Metadata for a single relation between DATOs.

@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / Options
-
 # Interface: Options
 
 Options for configuring the AppHelper module.

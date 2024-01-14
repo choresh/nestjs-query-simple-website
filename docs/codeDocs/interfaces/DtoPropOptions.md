@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / DtoPropOptions
-
 # Interface: DtoPropOptions
 
 Options for the `DtoProp` decorator.

@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / DatoOptions
-
 # Interface: DatoOptions
 
 Options for the `Dato` decorator.

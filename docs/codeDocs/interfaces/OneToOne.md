@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / OneToOne
-
 # Interface: OneToOne
 
 Options for defining a one-to-one relation.

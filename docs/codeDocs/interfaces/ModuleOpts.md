@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / ModuleOpts
-
 # Interface: ModuleOpts
 
 Options for configuring a resource module.

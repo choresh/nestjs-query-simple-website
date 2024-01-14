@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / Logger
-
 # Interface: Logger
 
 Represents a logger object with an 'info' method.

@@ -1,5 +1,3 @@
-[Code docs](../codeDocs.md) / ResourceHelper
-
 # Class: ResourceHelper
 
 Utility class for configuring a resource module.
