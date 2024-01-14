@@ -1,4 +1,4 @@
-[nestjs-query-simple](../README.md) / [Exports](../modules.md) / Relation
+[Code docs](../codeDocs.md) / Relation
 
 # Interface: Relation
 

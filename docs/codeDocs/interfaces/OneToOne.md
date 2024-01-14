@@ -1,4 +1,4 @@
-[nestjs-query-simple](../README.md) / [Exports](../modules.md) / OneToOne
+[Code docs](../codeDocs.md) / OneToOne
 
 # Interface: OneToOne
 

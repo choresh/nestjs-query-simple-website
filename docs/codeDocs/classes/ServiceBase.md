@@ -1,4 +1,4 @@
-[nestjs-query-simple](../README.md) / [Exports](../modules.md) / ServiceBase
+[Code docs](../codeDocs.md) / ServiceBase
 
 # Class: ServiceBase\<Dato\>
 

@@ -1,4 +1,4 @@
-[nestjs-query-simple](../README.md) / [Exports](../modules.md) / Logger
+[Code docs](../codeDocs.md) / Logger
 
 # Interface: Logger
 

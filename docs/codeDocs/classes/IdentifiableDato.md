@@ -1,4 +1,4 @@
-[nestjs-query-simple](../README.md) / [Exports](../modules.md) / IdentifiableDato
+[Code docs](../codeDocs.md) / IdentifiableDato
 
 # Class: IdentifiableDato
 

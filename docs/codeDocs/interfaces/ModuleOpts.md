@@ -1,4 +1,4 @@
-[nestjs-query-simple](../README.md) / [Exports](../modules.md) / ModuleOpts
+[Code docs](../codeDocs.md) / ModuleOpts
 
 # Interface: ModuleOpts
 

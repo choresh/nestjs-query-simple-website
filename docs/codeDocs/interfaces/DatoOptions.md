@@ -1,4 +1,4 @@
-[nestjs-query-simple](../README.md) / [Exports](../modules.md) / DatoOptions
+[Code docs](../codeDocs.md) / DatoOptions
 
 # Interface: DatoOptions
 

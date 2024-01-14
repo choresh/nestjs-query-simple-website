@@ -1,4 +1,4 @@
-[nestjs-query-simple](../README.md) / [Exports](../modules.md) / ResourceHelper
+[Code docs](../codeDocs.md) / ResourceHelper
 
 # Class: ResourceHelper
 
