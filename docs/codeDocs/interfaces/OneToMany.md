@@ -25,7 +25,7 @@ The foreign field for the relation.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:51](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L51)
+[src/decorators/datoProp.ts:53](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L53)
 
 ___
 
@@ -51,4 +51,4 @@ The reference type for the relation.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:41](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L41)
+[src/decorators/datoProp.ts:43](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L43)

@@ -40,8 +40,10 @@ ___
 
 • `Optional` **outputOnly**: `boolean`
 
-Indicates if this dato is for output only in GraphQL.
+Indicates if this dato is for 'output only', meaning of 'output only':
+* The data is calculated (not simple reflection of MongoDB data).
+* The data exposed as GraphQL response (not appear in GraphQL request).
 
 #### Defined in
 
-[src/decorators/dato.ts:29](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dato.ts#L29)
+[src/decorators/dato.ts:31](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dato.ts#L31)
