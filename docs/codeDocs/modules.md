@@ -45,7 +45,7 @@ sidebar_position: 1
 Ƭ **DatoDoc**\<`Dato`\>: `Document`\<`unknown`, `any`, `Dato`\> & `Dato` & `Required`\<\{ `_id`: `Types.ObjectId`  }\>
 
 Represents a document returned from Typegoose fetch methods in services.
-Contains fetched data along with Typegoose methods (e.g., 'save()').
+Contains fetched data along with Typegoose methods (e.g. 'save()').
 
 #### Type parameters
 

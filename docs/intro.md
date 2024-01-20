@@ -44,7 +44,7 @@ npm run start
 ### Send mutations and queries via GraphQL playground
 * Open a browser and navigate to http://localhost:3000/graphql.
 * Send mutations and queries, like the examples below.
-* You can also track the relevant data changes in your MongoDB (e.g., via [Compass](https://www.mongodb.com/products/compass)).
+* You can also track the relevant data changes in your MongoDB (e.g. via [Compass](https://www.mongodb.com/products/compass)).
 
 ### GraphQL mutations/queries examples
 

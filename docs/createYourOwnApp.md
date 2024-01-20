@@ -10,12 +10,12 @@ sidebar_position: 3
 
 ## Fix resource name
 ### Within TS files
-* Replace any occurrence of 'ExampleItem' (match case, not match whole word) with the name of your resource, starting with an uppercase (e.g., 'User').
-* Replace any occurrence of 'exampleItem' (match case, not match whole word) with the name of your resource, starting with a lowercase (e.g., 'user').
-* The later 's' (plural form of the resource name) is supposed to remain (e.g., 'ExampleItemsResolver' should be changed to 'UsersResolver').
+* Replace any occurrence of 'ExampleItem' (match case, not match whole word) with the name of your resource, starting with an uppercase (e.g. 'User').
+* Replace any occurrence of 'exampleItem' (match case, not match whole word) with the name of your resource, starting with a lowercase (e.g. 'user').
+* The later 's' (plural form of the resource name) is supposed to remain (e.g. 'ExampleItemsResolver' should be changed to 'UsersResolver').
 ### In the file system
-* Change the name of the folder 'exampleItems' - to the name (plural) of your resource (e.g., 'users').
-* Change the name of files started with 'exampleItem' - to start with the name (singular) of your resource (e.g., 'user').
+* Change the name of the folder 'exampleItems' - to the name (plural) of your resource (e.g. 'users').
+* Change the name of files started with 'exampleItem' - to start with the name (singular) of your resource (e.g. 'user').
 
 ## Fix resource fields
 * Remove example fields ('exampleProperty1'/'exampleProperty2') from Datos/Dtos classes.
