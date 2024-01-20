@@ -6,7 +6,8 @@ sidebar_position: 4
 
 ## Example app
 * The [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app) demonstrate usage of 'nestjs-query-simple' main capabilities.
-* Diagram of DATOs (MongoDB/GraphQL objects) in the demo - see [here](../static/img/datos.svg).
+* Diagram of DATOs (MongoDB/GraphQL objects) in the demo:
+ ![Alt text here](../static/img/datos.svg)
 
 ## Examples - DATOs/DTOs
 * Classes:
