@@ -20,7 +20,7 @@ The collection name for MongoDB.
 
 #### Defined in
 
-[src/decorators/dato.ts:25](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dato.ts#L25)
+[src/decorators/dato.ts:25](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dato.ts#L25)
 
 ___
 
@@ -32,7 +32,7 @@ The name of the dato.
 
 #### Defined in
 
-[src/decorators/dato.ts:21](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dato.ts#L21)
+[src/decorators/dato.ts:21](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dato.ts#L21)
 
 ___
 
@@ -46,4 +46,4 @@ Indicates if this dato is for 'output only', meaning of 'output only':
 
 #### Defined in
 
-[src/decorators/dato.ts:31](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dato.ts#L31)
+[src/decorators/dato.ts:31](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dato.ts#L31)

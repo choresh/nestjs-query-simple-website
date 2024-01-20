@@ -55,7 +55,7 @@ Contains fetched data along with Typegoose methods (e.g., 'save()').
 
 #### Defined in
 
-[src/bases/identifiableDato.ts:11](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/bases/identifiableDato.ts#L11)
+[src/bases/identifiableDato.ts:11](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/bases/identifiableDato.ts#L11)
 
 ___
 
@@ -82,7 +82,7 @@ Represents a function that logs messages.
 
 #### Defined in
 
-[src/helpers/appHelper.ts:13](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/helpers/appHelper.ts#L13)
+[src/helpers/appHelper.ts:13](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/helpers/appHelper.ts#L13)
 
 ___
 
@@ -96,7 +96,7 @@ Possible scopes for a property.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:34](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L34)
+[src/decorators/datoProp.ts:34](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L34)
 
 ## Functions
 
@@ -122,7 +122,7 @@ Decorator that marks a class as:
 
 #### Defined in
 
-[src/decorators/dato.ts:41](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dato.ts#L41)
+[src/decorators/dato.ts:41](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dato.ts#L41)
 
 ___
 
@@ -148,7 +148,7 @@ Decorator that marks a property as:
 
 #### Defined in
 
-[src/decorators/datoProp.ts:117](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L117)
+[src/decorators/datoProp.ts:117](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L117)
 
 ___
 
@@ -185,7 +185,7 @@ Decorator that marks a property as a GraphQL input DTO property.
 
 #### Defined in
 
-[src/decorators/dtoProp.ts:25](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dtoProp.ts#L25)
+[src/decorators/dtoProp.ts:25](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dtoProp.ts#L25)
 
 ___
 
@@ -209,7 +209,7 @@ Decorator that marks a class as a GraphQL input DTO type.
 
 #### Defined in
 
-[src/decorators/dto.ts:8](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dto.ts#L8)
+[src/decorators/dto.ts:8](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dto.ts#L8)
 
 ___
 
@@ -233,4 +233,4 @@ Decorator that marks a class as a GraphQL update DTO type.
 
 #### Defined in
 
-[src/decorators/dto.ts:19](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dto.ts#L19)
+[src/decorators/dto.ts:19](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dto.ts#L19)

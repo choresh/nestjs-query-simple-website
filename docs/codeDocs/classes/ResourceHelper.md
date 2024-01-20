@@ -46,4 +46,4 @@ The configured DynamicModule.
 
 #### Defined in
 
-[src/helpers/resourceHelper.ts:29](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/helpers/resourceHelper.ts#L29)
+[src/helpers/resourceHelper.ts:29](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/helpers/resourceHelper.ts#L29)

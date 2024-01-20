@@ -19,7 +19,7 @@ Specifies if the property can be nullable in the GraphQL schema.
 
 #### Defined in
 
-[src/decorators/dtoProp.ts:13](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dtoProp.ts#L13)
+[src/decorators/dtoProp.ts:13](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dtoProp.ts#L13)
 
 ___
 
@@ -41,4 +41,4 @@ Specifies a custom type function for the property.
 
 #### Defined in
 
-[src/decorators/dtoProp.ts:17](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/dtoProp.ts#L17)
+[src/decorators/dtoProp.ts:17](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dtoProp.ts#L17)

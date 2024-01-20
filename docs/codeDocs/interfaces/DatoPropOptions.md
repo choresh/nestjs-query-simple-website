@@ -24,7 +24,7 @@ Options for defining a many-to-one relation.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:95](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L95)
+[src/decorators/datoProp.ts:95](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L95)
 
 ___
 
@@ -36,7 +36,7 @@ Indicates if the property is nullable.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:83](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L83)
+[src/decorators/datoProp.ts:83](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L83)
 
 ___
 
@@ -48,7 +48,7 @@ Options for defining a one-to-many relation.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:91](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L91)
+[src/decorators/datoProp.ts:91](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L91)
 
 ___
 
@@ -60,7 +60,7 @@ Options for defining a one-to-one relation.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:99](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L99)
+[src/decorators/datoProp.ts:99](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L99)
 
 ___
 
@@ -72,7 +72,7 @@ Indicates if the property is a primary key.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:87](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L87)
+[src/decorators/datoProp.ts:87](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L87)
 
 ___
 
@@ -84,7 +84,7 @@ The scope of the property.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:103](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L103)
+[src/decorators/datoProp.ts:103](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L103)
 
 ___
 
@@ -106,4 +106,4 @@ The type of the property.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:107](https://github.com/choresh/nestjs-query-simple/blob/3e0ba8f/packages/nestjs-query-simple/src/decorators/datoProp.ts#L107)
+[src/decorators/datoProp.ts:107](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L107)
