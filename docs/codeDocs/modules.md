@@ -199,7 +199,7 @@ Decorator that marks a class as a GraphQL input DTO type.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `name` | `string` | The name of the DTO. |
+| `name` | `string` | The dto name suffix, as exposed by GraphQL (will be preceded by 'Input' prefix). |
 
 #### Returns
 
@@ -223,7 +223,7 @@ Decorator that marks a class as a GraphQL update DTO type.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `name` | `string` | The name of the DTO. |
+| `name` | `string` | The dto name suffix, as exposed by GraphQL (will be preceded by 'Update' prefix). |
 
 #### Returns
 

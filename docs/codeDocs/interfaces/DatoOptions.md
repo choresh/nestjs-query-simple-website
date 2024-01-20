@@ -16,7 +16,7 @@ Options for the `Dato` decorator.
 
 • `Optional` **collection**: `string`
 
-The name of the dato's collection at MongoDB.
+The dato collection name at MongoDB.
 
 #### Defined in
 
@@ -28,7 +28,7 @@ ___
 
 • **name**: `string`
 
-The name of the dato, as exposed by GraphQL.
+The dato name, as exposed by GraphQL.
 
 #### Defined in
 
