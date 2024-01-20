@@ -148,7 +148,7 @@ Decorator that marks a property as:
 
 #### Defined in
 
-[src/decorators/datoProp.ts:117](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L117)
+[src/decorators/datoProp.ts:119](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L119)
 
 ___
 

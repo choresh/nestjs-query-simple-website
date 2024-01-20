@@ -24,13 +24,13 @@ Options for defining a relation.
 
 • **refType**: () => `Type`\<`any`\>
 
-The reference type for the relation.
+The type of the referred dato, specifies how it exists in MongoDB and how it is exposed in GraphQL.
 
 #### Type declaration
 
 ▸ (): `Type`\<`any`\>
 
-The reference type for the relation.
+The type of the referred dato, specifies how it exists in MongoDB and how it is exposed in GraphQL.
 
 ##### Returns
 

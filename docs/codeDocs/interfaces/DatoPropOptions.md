@@ -81,10 +81,12 @@ ___
 • `Optional` **propScope**: [`PropScope`](../modules.md#propscope)
 
 The scope of the property.
+* extrnal: the property exposed only at GraphQL (but not exists at MongoDB).
+* internal: the property exists only at MongoDB (but not exposed at GraphQL).
 
 #### Defined in
 
-[src/decorators/datoProp.ts:103](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L103)
+[src/decorators/datoProp.ts:105](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L105)
 
 ___
 
@@ -92,13 +94,13 @@ ___
 
 • `Optional` **type**: () => `any`
 
-The type of the property.
+The type of the property (how it exists at MongoDB, and how it exposed at GraphQL).
 
 #### Type declaration
 
 ▸ (): `any`
 
-The type of the property.
+The type of the property (how it exists at MongoDB, and how it exposed at GraphQL).
 
 ##### Returns
 
@@ -106,4 +108,4 @@ The type of the property.
 
 #### Defined in
 
-[src/decorators/datoProp.ts:107](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L107)
+[src/decorators/datoProp.ts:109](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/datoProp.ts#L109)
