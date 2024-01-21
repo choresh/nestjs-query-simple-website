@@ -49,7 +49,7 @@ sidebar_position: 3
 * Validate that the corresponding collection is updated in your MongoDB.
 
 ## Add more resources
-* Get fresh copy of folder 'exampleItems', and repeat steps in the 'Fix resource name', 'Fix resource fields' and 'Add custom mutations/queries' sections.
+* Get fresh copy of folder [exampleItems](https://github.com/choresh/nestjs-query-simple/tree/main/examples/minimal-demo-app/src/exampleItems), and repeat steps in the [Fix resource name](https://nestjs-query-simple-website.vercel.app/docs/createYourOwnApp#fix-resource-name), [Fix resource fields](https://nestjs-query-simple-website.vercel.app/docs/createYourOwnApp#fix-resource-fields) and [Add custom mutations/queries](https://nestjs-query-simple-website.vercel.app/docs/createYourOwnApp#add-custom-mutationsqueries) sections.
 * Add name of your new resource's module, to 'imports' list, at definition of main module of your app (file 'src/app.module.ts'), as shown here:
     ``` ts
     @Module({
