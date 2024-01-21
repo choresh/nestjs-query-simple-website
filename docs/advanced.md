@@ -47,8 +47,8 @@ sidebar_position: 4
 
 ## Examples - custom mutations/queries
 Standard CRUD operations are supported 'out-of-the-box' by 'nestjs-query-simple', in case you want to add non-standard (custom) mutations/queries - see example method 'demonstrateComplexQuery()':
-* In service: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/users.service.ts#L35).
-* In resolver: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/users.resolver.ts#L16).
+* In service: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/users.service.ts#L37).
+* In resolver: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/users.resolver.ts#L18).
 
 ## Generate/update TS SDK
 * The example app, has the capability to generate SDK (TS code, to be used by clients).
