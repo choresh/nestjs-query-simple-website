@@ -21,13 +21,23 @@ sidebar_position: 4
 * Virtual (calculated) objects: [class UserInfo](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/users.service.ts#L20).
 
 ## Examples - DATOs/DTOs properties
-* Passing types (embedded class, enum...) to decorator:
-    * Specify embedded class type: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tasks/datos/task.dato.ts#L25).
-    * Specify enum type: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/dtos/user.dto.ts#L14).
-    * Specify GraphQL scalar type: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/dtos/user.dto.ts#L19)
-* One-to-one relation: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/datos/tenantBilling.dato.ts#L21).
-* One-to-many relation: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenants/datos/tenant.dato.ts#L20).
-* Many-to-one relation: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/datos/user.dato.ts#L31).
+* Passing types (embedded class, enum...) to property decorator:
+    * Specify embedded class type:
+        * At DATO: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tasks/datos/task.dato.ts#L25).
+        * At input DTO: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tasks/dtos/task.dto.ts#L14).
+        * At update DTO: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tasks/dtos/task.dto.ts#L38).
+    * Specify enum type:
+        * At DATO [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/datos/user.dato.ts#L39).
+        * At input DTO [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/dtos/user.dto.ts#L14).
+        * At update DTO [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/dtos/user.dto.ts#L38).
+    * Specify GraphQL scalar type:
+        * At DATO: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/datos/user.dato.ts#L44).
+        * At input DTO: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/dtos/user.dto.ts#L19).
+        * At update DTO: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/dtos/user.dto.ts#L44).
+* Specify objects relation (applicable only at DATO, not in DTO):
+    * One-to-one relation: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/datos/tenantBilling.dato.ts#L21).
+    * One-to-many relation: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenants/datos/tenant.dato.ts#L20).
+    * Many-to-one relation: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/datos/user.dato.ts#L31).
 
 ## Examples - modules and services
 * Resource service: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenants/tenants.service.ts).
