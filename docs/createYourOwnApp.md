@@ -41,7 +41,10 @@ sidebar_position: 3
             * [@UpdateDto()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#updatedto)
 
 ## Add custom mutations/queries
-* See [Examples - custom mutations/queries](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---custom-mutationsqueries).
+* See [Examples - create custom mutations/queries](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---create-custom-mutationsqueries).
+
+## Override a default mutations/queries
+* See [Examples - override a default mutations/queries](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---override-a-default-mutationsqueries).
 
 ## Use your app
 * Install/build/run/use your app, in the same manner as explained in the [Intro](https://nestjs-query-simple-website.vercel.app/docs/intro) page.
