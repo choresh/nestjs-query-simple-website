@@ -20,17 +20,28 @@ sidebar_position: 3
 ## Fix resource fields
 * Remove example fields ('exampleProperty1'/'exampleProperty2') from Datos/Dtos classes.
 * Set your desired fields.
-* For more complicated types (Enum/Int/Object...), or complicated relations (one-to-many, many-to-one, one-to-one), or other field spesifications (nullable, primaryKey...) - see examples at Datos/Dtos classes, at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app), or browse code docomentation:
-    * Dato:
-        * [@Dato()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#dato)
-        * [@DatoProp()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#datoprop)
-    * Dto
-        * [@InputDto()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#inputdto)
-        * [@UpdateDto()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#updatedto)
-        * [@DtoProp()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#dtoprop)
+* For more complicated types (Enum/Int/Object...), or complicated relations (one-to-many, many-to-one, one-to-one), or other field spesifications (nullable, primaryKey...):
+    1. See [Examples - DATOs/DTOs properties](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---datosdtos-properties).
+    2. See more examples at properties of DATOs/DTOs classes, at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
+    3. Browse code docomentation:
+        * Dato:
+            * [@DatoProp()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#datoprop)
+        * Dto
+            * [@DtoProp()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#dtoprop)
+
+## Use more DATOs/DTOs options
+* For more complicated DATOs/DTOs classes:
+    1. See [Examples - DATOs/DTOs classes](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---datosdtos-classes).
+    3. See more examples of DATOs/DTOs classes, at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
+    4. Browse code docomentation:
+        * Dato:
+            * [@Dato()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#dato)
+        * Dto
+            * [@InputDto()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#inputdto)
+            * [@UpdateDto()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#updatedto)
 
 ## Add custom mutations/queries
-Standard CRUD operations are supported 'out-of-the-box' by 'nestjs-query-simple', in case you want to add non-standard (custom) mutations/queries - see example method 'UsersResolver.demonstrateComplexQuery()', at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
+* See [Examples - custom mutations/queries](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---custom-mutationsqueries).
 
 ## Use your app
 * Install/build/run/use your app, in the same manner as explained in the [Intro](https://nestjs-query-simple-website.vercel.app/docs/intro) page.
