@@ -45,10 +45,13 @@ sidebar_position: 4
 * Resource module: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenants/tenants.module.ts).
 * App module: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/app.module.ts).
 
-## Examples - custom mutations/queries
-Standard CRUD operations are supported 'out-of-the-box' by 'nestjs-query-simple', in case you want to add non-standard (custom) mutations/queries - see example method 'demonstrateComplexQuery()':
+## Examples - create custom mutations/queries
+The 'nestjs-query-simple' package inherently supports standard CRUD operations. If you intend to include custom mutations or queries, refer to the 'demonstrateComplexQuery()' example method:
 * In service: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/users.service.ts#L37).
 * In resolver: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/users/users.resolver.ts#L18).
+
+## Examples - override a default mutations/queries
+If you wish to customize default mutations or queries, refer to the 'createOne()' method in the example [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/tenantBillings.service.ts#L24). A similar approach can be applied in the resolver as well.
 
 ## Generate/update TS SDK
 * The example app, has the capability to generate SDK (TS code, to be used by clients).
