@@ -62,18 +62,18 @@ mutation {
 }
 ```
 
-Create single tenant-billing (and get details of the related tenant):
+Create single tenant-billing (and get data of refferenced (one-to-one) object):
 ```graphql
 mutation {
   createOneTenantBilling(input: {
    tenantBilling: {
-    tenantId: <id of exists tenant>  # Set id of the related (one-to-one) tenant (should not have yet a related tenant-billing).
+    tenantId: <id of exists tenant>  # Set id of refferenced (one-to-one) tenant (the specified tenant should not have yet a refferenced tenant-billing).
     taxNumber: "taxNumber-1"
     phoneNumber: "phoneNumber-1"
   }
   }) {
     id
-    tenant {  # Get details of the related (one-to-one) tenant.
+    tenant {  # Get data of refferenced (one-to-one) object.
      id
       name
     }
@@ -81,26 +81,26 @@ mutation {
 }
 ```
 
-Create many users (and get details of the related tenant(s)):
+Create many users (and get data of refferenced (one-to-many) object(s)):
 ```graphql
 mutation {
   createManyUsers(input: {
     users: [
       { 
         name: "user-1"
-        tenantId: <id of exists tenant>  # Set id of the related (one-to-many) tenant (should not have yet a related user with same name).
+        tenantId: <id of exists tenant>  # Set id of refferenced (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
         age: 31
         gender: male
       }
     	{ 
         name: "user-2"
-        tenantId: <id of exists tenant>  # Set id of the related (one-to-many) tenant (should not have yet a related user with same name).
+        tenantId: <id of exists tenant>  # Set id of refferenced (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
         age: 32
         gender: female
       }
       {
         name: "user-3"
-        tenantId: <id of exists tenant>  # Set id of the related (one-to-many) tenant (should not have yet a related user with same name).
+        tenantId: <id of exists tenant>  # Set id of the (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
         age: 33
         gender: male
       }
@@ -108,7 +108,7 @@ mutation {
   }) {
     id
    	name
-    tenant { # Get details of the related (one-to-many) tenant.
+    tenant { # Get data of refferenced (one-to-many) object.
       id
       name
     }
@@ -116,7 +116,7 @@ mutation {
 }
 ```
 
-Get a paginated list of users with specific filter, sorting, and paging settings:
+Get a paginated list of users with specific filter, sorting, and paging settings (and get data of refferenced (one-to-many) object(s)):
 ```graphql
 query {
   users(
@@ -138,10 +138,64 @@ query {
       name
       age
       gender
-      tenant { # Get details of the related (one-to-many) tenant.
+      tenant { # Get data of refferenced (one-to-many) object.
         id
         name
       }
+    }
+  }
+}
+```
+
+Create many tasks (and get data of embedded objects and refferenced (one-to-many) object(s)):
+```graphql
+mutation {
+  createManyTasks(input: {
+    tasks: [
+      { 
+        name: "task-1"
+        userId: <id of exists user>  # Set id of refferenced (one-to-many) user.
+        details: { # Set data of embedded object.
+          title: "title-1"
+          description: "description-1"
+        }
+        comments: [ # Set data of embedded objects array.
+        ]
+      }
+    	{ 
+        name: "task-2" 
+        userId: <id of exists user>  # Set id of refferenced (one-to-many) user.
+        details: {  # Set data of embedded object.
+          title: "title-2"
+          description: "description-2"
+        }
+        comments: [ # Set data of embedded objects array.
+        ]
+      }
+      { 
+        name: "task-3"
+        userId: <id of exists user>  # Set id of refferenced (one-to-many) user.
+        details: {  # Set data of embedded object.
+          title: "title-3"
+          description: "description-3"
+        }
+        comments: [  # Set data of embedded objects array.
+        ]
+      }
+    ]
+  }) {
+    id
+   	name
+    details {  # Get data of embedded object.
+      title
+      description
+    }
+    comments { # Get data of embedded objects array.
+      text
+    }
+  	user {  # Get data of refferenced (one-to-many) object.
+      id
+      name
     }
   }
 }
