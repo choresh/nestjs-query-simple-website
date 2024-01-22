@@ -97,7 +97,7 @@ mutation {
         age: 31
         gender: male
       }
-    	{ 
+      { 
         name: "user-2"
         tenantId: <id of exists tenant>  # Set id of refferenced (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
         age: 32
@@ -136,7 +136,7 @@ mutation {
         comments: [ # Set data of embedded objects array.
         ]
       }
-    	{ 
+      { 
         name: "task-2" 
         userId: <id of exists user>  # Set id of refferenced (one-to-many) user.
         details: {  # Set data of embedded object.
@@ -175,16 +175,16 @@ mutation {
 }
 ```
 
-Get list of users with specific filter, sorting, and paging settings (and get data of refferenced (one-to-many, many-to-one) object(s)):
+Get list of users with specific filter, sorting, and paging settings, at root/refferenced objects (and get data of refferenced (one-to-many, many-to-one) object(s)):
 ```graphql
 query {
   users(
-    filter: { # Define filter for parent object.
+    filter: { # Define filter for root objects.
       gender: {
         eq: male
       }
     }
-    sorting: [{ # Define sorting for parent object.
+    sorting: [{ # Define sorting for root objects.
       field: age
       direction: ASC
     }]
@@ -197,7 +197,7 @@ query {
       hasPreviousPage
       hasNextPage
     }
-    nodes { # Get the list.
+    nodes { # Get the list of root objects.
       name
       age
       gender
@@ -205,17 +205,17 @@ query {
         name
       }
       tasks ( # Get data of refferenced (many-to-one) objects.
-      	filter: { # Define filter for child objects.
+      	filter: { # Define filter for refferenced objects.
         userId: {
             neq: "abc"
           }
         }
-        sorting: [{ # Define sorting for child objects.
+        sorting: [{ # Define sorting for refferenced objects.
           field: name 
           direction: DESC
         }]
       ) {
-        nodes { # Get the list.
+        nodes { # Get the list of refferenced objects.
           name
         }
       }
