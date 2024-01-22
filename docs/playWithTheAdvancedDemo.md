@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 
 # Play with the advanced demo app
-Let's discover some advanced capapilities of **'nestjs-query-simple'**.
+Let's discover some advanced capabilities of **'nestjs-query-simple'**.
 
 ## Getting Started
 
