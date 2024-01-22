@@ -46,6 +46,9 @@ npm run start
 * Send mutations and queries, like the examples below.
 * You can also track the relevant data changes in your MongoDB (e.g. via [Compass](https://www.mongodb.com/products/compass)).
 
+### Objects relations
+To undersand the demo's objects relations - watch [Advanced - about advanced demo app](https://nestjs-query-simple-website.vercel.app/docs/advancedAbout).
+
 ### GraphQL mutations/queries examples
 
 Create single tenant:
