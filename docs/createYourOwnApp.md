@@ -46,6 +46,9 @@ sidebar_position: 3
 ## Override a default mutations/queries
 * See [Examples - override a default mutations/queries](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---override-a-default-mutationsqueries).
 
+## Inject a service into another service
+* See [Examples - inject a service into another service](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---inject-a-service-into-another-service).
+
 ## Use your app
 * Install/build/run/use your app, in the same manner as explained in the [Intro](https://nestjs-query-simple-website.vercel.app/docs/intro) page.
 * Obviously you need to prepare/test your own mutations and queries at GraphQL playground.

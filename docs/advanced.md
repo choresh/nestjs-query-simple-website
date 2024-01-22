@@ -53,6 +53,18 @@ The 'nestjs-query-simple' package inherently supports standard CRUD operations. 
 ## Examples - override a default mutations/queries
 If you wish to customize default mutations or queries, refer to the 'createOne()' method in the example [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/tenantBillings.service.ts#L24). A similar approach can be applied in the resolver as well.
 
+## Examples - inject a service into another service
+If you wish to access a service from another service (e.g. to handle some asspects of relations between MongoDB documents), refer to usage of `TenantsService` within `TenantBillingsService` (this done in order to maintain the one-to-one relation, between 'TenantBillingDato' and 'TenantDato', at the 'TenantDato' side):
+* Consuming the injected service: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/tenantBillings.service.ts#L18).
+* Using the injected service: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/tenantBillings.service.ts#L66).
+* Importing the injected service's module: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/tenantBillings.module.ts#L14).
+* Exporting the injected service: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenants/tenants.module.ts#L14).
+* Handle the injections in tests: see usgage of 'TenantsService', 'TenantDato' and 'tenantId', [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/tenantBillings.service.spec.ts) and [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/tenantBillings.resolver.spec.ts).
+
+
+
+
+
 ## Generate/update TS SDK
 * The example app, has the capability to generate SDK (TS code, to be used by clients).
 * The generation done via static code analysis, i.e. the generation can be done without running the app.
