@@ -61,10 +61,6 @@ If you wish to access a service from another service (e.g. to handle some asspec
 * Exporting the injected service: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenants/tenants.module.ts#L14).
 * Handle the injections in tests: see usgage of 'TenantsService', 'TenantDato' and 'tenantId', [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/tenantBillings.service.spec.ts) and [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenantBillings/tenantBillings.resolver.spec.ts).
 
-
-
-
-
 ## Generate/update TS SDK
 * The example app, has the capability to generate SDK (TS code, to be used by clients).
 * The generation done via static code analysis, i.e. the generation can be done without running the app.
