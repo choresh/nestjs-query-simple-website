@@ -1,14 +1,9 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# Play with the advanced demo app
+# Advanced - play with the advanced demo app
 Let's discover some advanced capabilities of **'nestjs-query-simple'**.
-
-## About advanced example app
-* The [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app) demonstrate usage of 'nestjs-query-simple' main capabilities.
-* Diagram of DATOs (MongoDB/GraphQL objects) in the demo:
- ![Alt text here](../static/img/datos.svg)
 
 ## Getting Started
 

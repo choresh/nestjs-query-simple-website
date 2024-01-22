@@ -21,7 +21,7 @@ sidebar_position: 3
 * Remove example fields ('exampleProperty1'/'exampleProperty2') from Datos/Dtos classes.
 * Set your desired fields.
 * For more complicated types (Enum/Int/Object...), or complicated relations (one-to-many, many-to-one, one-to-one), or other field spesifications (nullable, primaryKey...):
-    1. See [Examples - DATOs/DTOs properties](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---datosdtos-properties).
+    1. See [DATOs/DTOs classes examples](https://nestjs-query-simple-website.vercel.app/docs/advancedExamples#datosdtos-classes-examples).
     2. See more examples at properties of DATOs/DTOs classes, at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
     3. Browse code docomentation:
         * Dato:
@@ -31,7 +31,7 @@ sidebar_position: 3
 
 ## Use more DATOs/DTOs options
 * For more complicated DATOs/DTOs classes:
-    1. See [Examples - DATOs/DTOs classes](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---datosdtos-classes).
+    1. See [Examples - DATOs/DTOs classes](https://nestjs-query-simple-website.vercel.app/docs/advancedExamples#datosdtos-classes-examples).
     3. See more examples of DATOs/DTOs classes, at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
     4. Browse code docomentation:
         * Dato:
@@ -41,13 +41,13 @@ sidebar_position: 3
             * [@UpdateDto()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#updatedto)
 
 ## Add custom mutations/queries
-* See [Examples - create custom mutations/queries](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---create-custom-mutationsqueries).
+* See [Create custom mutations/queries examples](https://nestjs-query-simple-website.vercel.app/docs/advancedExamples#create-custom-mutationsqueries-examples).
 
 ## Override a default mutations/queries
-* See [Examples - override a default mutations/queries](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---override-a-default-mutationsqueries).
+* See [Override a default mutations/queries examples](https://nestjs-query-simple-website.vercel.app/docs/advancedExamples#override-a-default-mutationsqueries-examples).
 
 ## Inject a service into another service
-* See [Examples - inject a service into another service](https://nestjs-query-simple-website.vercel.app/docs/advanced#examples---inject-a-service-into-another-service).
+* See [Inject a service into another service examples](https://nestjs-query-simple-website.vercel.app/docs/advancedExamples#inject-a-service-into-another-service-examples).
 
 ## Use your app
 * Install/build/run/use your app, in the same manner as explained in the [Intro](https://nestjs-query-simple-website.vercel.app/docs/intro) page.

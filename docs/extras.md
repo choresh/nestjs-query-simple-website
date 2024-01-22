@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # Extras
@@ -21,6 +21,15 @@ sidebar_position: 6
   - getOne (singular form of the resource name, e.g. 'tenant')
   - getMany (plural form of the resource name, e.g. 'tenants')
 
+## Generate/update TS SDK
+* The example app, has the capability to generate SDK (TS code, to be used by clients).
+* The generation done via static code analysis, i.e. the generation can be done without running the app.
+* To generate/update the SDK - run this command within the app's root folder:
+    ```
+    $ npm run generate
+    ```
+* The generated code will be file 'generatedApi.ts', within the app's root folder.
+* You can add custom mutations/queries in folder 'customOperations' (e.g. versions that not ask to return all the entitie's properties), and after generation - the SDK will expose them.
 
 ## Manage MongoDB migrations
 Run command in this structure within the app's root folder:
