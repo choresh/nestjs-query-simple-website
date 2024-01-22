@@ -112,7 +112,7 @@ mutation {
     ]
   }) {
     id
-   	name
+    name
     tenant { # Get data of refferenced (one-to-many) object.
       id
       name
