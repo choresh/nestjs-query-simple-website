@@ -48,9 +48,9 @@ npm run start
 
 ### GraphQL mutations/queries examples
 
-Create a single example item:
+Create single example item:
 ```graphql
-mutation CreateSingleExampleItem {
+mutation {
   createOneExampleItem(input: {
     exampleItem: {
       exampleProperty1: "val-a"
@@ -63,13 +63,13 @@ mutation CreateSingleExampleItem {
 }
 ```
 
-Update a single example item:
+Update single example item:
 ```graphql
-mutation UpdateSingleExampleItem {
+mutation {
   updateOneExampleItem(input: {
-    id: "YOUR_ID_HERE"
+    id: <id of exists example item>
     update: {
-      exampleProperty1: "val-b",
+      exampleProperty1: "val-b"
       exampleProperty2: "val-c"
     }
   }) {
@@ -80,11 +80,11 @@ mutation UpdateSingleExampleItem {
 }
 ```
 
-Delete a single example item:
+Delete single example item:
 ```graphql
-mutation DeleteSingleExampleItem {
+mutation {
   deleteOneExampleItem(input: {
-    id: "YOUR_ID_HERE"
+    id: <id of exists example item>
   }) {
     id
     exampleProperty1
@@ -95,7 +95,7 @@ mutation DeleteSingleExampleItem {
 
 Create multiple example items:
 ```graphql
-mutation CreateManyExampleItems {
+mutation {
   createManyExampleItems(input: {
     exampleItems: [
       {
@@ -118,10 +118,12 @@ mutation CreateManyExampleItems {
 
 Update multiple example items:
 ```graphql
-mutation UpdateManyExampleItems {
+mutation {
   updateManyExampleItems(input: {
     filter: {
-      exampleProperty1: { eq: "OldValue" }
+      exampleProperty1: {
+        eq: "OldValue"
+      }
     },
     update: {
       exampleProperty1: "NewValue"
@@ -134,10 +136,12 @@ mutation UpdateManyExampleItems {
 
 Delete multiple example items based on a filter:
 ```graphql
-mutation DeleteManyExampleItems {
+mutation {
   deleteManyExampleItems(input: {
     filter: {
-      exampleProperty1: { eq: "ValueToFilter" }
+      exampleProperty1: {
+        eq: "ValueToFilter"
+      }
     }
   }) {
     deletedCount
@@ -145,10 +149,10 @@ mutation DeleteManyExampleItems {
 }
 ```
 
-Get a single example item by ID:
+Get single example item by ID:
 ```graphql
-query GetSingleExampleItem {
-  exampleItem(id: "YOUR_ID_HERE") {
+query {
+  exampleItem(id: <id of exists example item>) {
     id
     exampleProperty1
     exampleProperty2
@@ -156,9 +160,9 @@ query GetSingleExampleItem {
 }
 ```
 
-Get a paginated list of example items with default paging settings:
+Get paginated list of example items with default paging settings:
 ```graphql
-query GetExampleItems {
+query {
   exampleItems {
     pageInfo {
       hasNextPage
@@ -173,16 +177,24 @@ query GetExampleItems {
 }
 ```
 
-Get a paginated list of example items with specific filter, sorting, and paging settings:
+Get list of example items with specific filter, sorting, and paging settings:
 ```graphql
-query GetFilteredAndSortedExampleItems {
+query {
   exampleItems(
-    paging: { limit: 10, offset: 0 } # Adjust limit and offset as needed
+    paging: {
+      limit: 10
+      offset: 0 
+    }
     filter: {
-      exampleProperty1: { neq: "SomeValue" } # Adjust filter criteria
+      exampleProperty1: { 
+        neq: "SomeValue"
+      }
     }
     sorting: [
-      { field: exampleProperty1, direction: ASC } # Adjust sorting field and direction
+      {
+        field: exampleProperty1
+        direction: ASC
+      }
     ]
   ) {
     pageInfo {

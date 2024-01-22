@@ -294,3 +294,21 @@ query {
   }
 }
 ```
+
+```graphql
+mutation {
+  updateManyUsers(
+    input: {
+      filter: {
+        age: { gt: 25 }
+        gender: {neq: male}
+      }
+      update: {
+        gender: male
+      }
+    }
+  ) {
+    updatedCount
+  }
+}
+```
