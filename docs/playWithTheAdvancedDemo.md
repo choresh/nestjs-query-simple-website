@@ -147,7 +147,7 @@ query {
 }
 ```
 
-Create many tasks (and get data of embedded objects and refferenced (one-to-many) object(s)):
+Create many tasks (and set/get data of embedded objects):
 ```graphql
 mutation {
   createManyTasks(input: {
@@ -195,6 +195,52 @@ mutation {
     }
   	user {  # Get data of refferenced (one-to-many) object.
       id
+      name
+    }
+  }
+}
+```
+
+Create many sprints:
+```graphql
+mutation {
+  createManySprints(input: {
+    sprints: [
+      { 
+        name: "sprint-1"
+      }
+    	{
+        name: "sprint-2"
+      }
+      { 
+        name: "sprint-3"
+      }
+    ]
+  }) {
+    id
+   	name
+  }
+}
+```
+
+Add entry to join table, which enables to define many-to-many relations (and get data of refferenced (one-to-many) object(s)):
+```graphql
+mutation {
+  createOneTaskSprintJunction(input: {
+   taskSprintJunction: {
+    taskId: <id of exists user>  # Set id of refferenced (one-to-many) task.
+    sprintId: <id of exists sprint> # Set id of refferenced (one-to-many) sprint.
+  }
+  }) {
+    id
+    task {  # Get data of refferenced (one-to-many) object.
+      id
+      details {
+        title
+        description
+      }
+    }
+    sprint {  # Get data of refferenced (one-to-many) object.
       name
     }
   }
