@@ -22,7 +22,7 @@ sidebar_position: 3
 * Set your desired fields.
 * For more complicated types (Enum/Int/Object...), or complicated relations (one-to-many, many-to-one, one-to-one), or other field spesifications (nullable, primaryKey...):
     1. See [DATOs/DTOs properties examples](https://nestjs-query-simple-website.vercel.app/docs/advancedExamples#datosdtos-properties-examples).
-    2. See more examples at properties of DATOs/DTOs classes, at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
+    2. See more examples at properties of DATOs/DTOs classes, within [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app) code.
     3. Browse code documentation:
         * Dato:
             * [@DatoProp()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#datoprop)
@@ -32,7 +32,7 @@ sidebar_position: 3
 ## Use more DATOs/DTOs options
 * For more complicated DATOs/DTOs classes:
     1. See [DATOs/DTOs classes examples](https://nestjs-query-simple-website.vercel.app/docs/advancedExamples#datosdtos-classes-examples).
-    3. See more examples of DATOs/DTOs classes, at [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app).
+    3. See more examples of DATOs/DTOs classes, within [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app) code.
     4. Browse code documentation:
         * Dato:
             * [@Dato()](https://nestjs-query-simple-website.vercel.app/docs/codeDocs/modules#dato)
