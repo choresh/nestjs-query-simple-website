@@ -5,6 +5,11 @@ sidebar_position: 5
 # Play with the advanced demo app
 Let's discover some advanced capabilities of **'nestjs-query-simple'**.
 
+## About advanced example app
+* The [advanced-demo-app](https://github.com/choresh/nestjs-query-simple/tree/main/examples/advanced-demo-app) demonstrate usage of 'nestjs-query-simple' main capabilities.
+* Diagram of DATOs (MongoDB/GraphQL objects) in the demo:
+ ![Alt text here](../static/img/datos.svg)
+
 ## Getting Started
 
 Get started by **using our 'advanced-demo-app'**.
@@ -66,11 +71,11 @@ Create single tenant-billing (and get data of refferenced (one-to-one) object):
 ```graphql
 mutation {
   createOneTenantBilling(input: {
-   tenantBilling: {
-    tenantId: <id of exists tenant>  # Set id of refferenced (one-to-one) tenant (the specified tenant should not have yet a refferenced tenant-billing).
-    taxNumber: "taxNumber-1"
-    phoneNumber: "phoneNumber-1"
-  }
+    tenantBilling: {
+      tenantId: <id of exists tenant>  # Set id of refferenced (one-to-one) tenant (the specified tenant should not have yet a refferenced tenant-billing).
+      taxNumber: "taxNumber-1"
+      phoneNumber: "phoneNumber-1"
+    }
   }) {
     id
     tenant {  # Get data of refferenced (one-to-one) object.
@@ -116,37 +121,6 @@ mutation {
 }
 ```
 
-Get a paginated list of users with specific filter, sorting, and paging settings (and get data of refferenced (one-to-many) object(s)):
-```graphql
-query {
-  users(
-    	filter: {
-        gender: {
-          eq: male
-        }
-      }
-    	sorting: [{
-        field: age direction: ASC
-      }]
-    	paging: {
-        offset: 0
-        limit: 10
-      }
-      ) {
-    nodes {
-      id
-      name
-      age
-      gender
-      tenant { # Get data of refferenced (one-to-many) object.
-        id
-        name
-      }
-    }
-  }
-}
-```
-
 Create many tasks (and set/get data of embedded objects):
 ```graphql
 mutation {
@@ -185,7 +159,7 @@ mutation {
     ]
   }) {
     id
-   	name
+    name
     details {  # Get data of embedded object.
       title
       description
@@ -193,9 +167,58 @@ mutation {
     comments { # Get data of embedded objects array.
       text
     }
-  	user {  # Get data of refferenced (one-to-many) object.
+    user {  # Get data of refferenced (one-to-many) object.
       id
       name
+    }
+  }
+}
+```
+
+Get list of users with specific filter, sorting, and paging settings (and get data of refferenced (one-to-many, many-to-one) object(s)):
+```graphql
+query {
+  users(
+    filter: { # Define filter for parent object.
+      gender: {
+        eq: male
+      }
+    }
+    sorting: [{ # Define sorting for parent object.
+      field: age
+      direction: ASC
+    }]
+    paging: {  # Define current paging.
+      offset: 0
+      limit: 10
+    }
+  ) {
+    pageInfo { # Get current paging info.
+      hasPreviousPage
+      hasNextPage
+    }
+    nodes { # Get the list.
+      name
+      age
+      gender
+      tenant { # Get data of refferenced (one-to-many) object.
+        name
+      }
+      tasks ( # Get data of refferenced (many-to-one) objects.
+      	filter: { # Define filter for child objects.
+        userId: {
+            neq: "abc"
+          }
+        }
+        sorting: [{ # Define sorting for child objects.
+          field: name 
+          direction: DESC
+        }]
+      ) {
+        nodes { # Get the list.
+          name
+        }
+      }
     }
   }
 }
@@ -209,7 +232,7 @@ mutation {
       { 
         name: "sprint-1"
       }
-    	{
+      {
         name: "sprint-2"
       }
       { 
@@ -218,7 +241,7 @@ mutation {
     ]
   }) {
     id
-   	name
+    name
   }
 }
 ```
@@ -227,10 +250,10 @@ Add entry to join table, which enables to define many-to-many relations (and get
 ```graphql
 mutation {
   createOneTaskSprintJunction(input: {
-   taskSprintJunction: {
-    taskId: <id of exists user>  # Set id of refferenced (one-to-many) task.
-    sprintId: <id of exists sprint> # Set id of refferenced (one-to-many) sprint.
-  }
+    taskSprintJunction: {
+      taskId: <id of exists user>  # Set id of refferenced (one-to-many) task.
+      sprintId: <id of exists sprint> # Set id of refferenced (one-to-many) sprint.
+    }
   }) {
     id
     task {  # Get data of refferenced (one-to-many) object.
@@ -247,4 +270,27 @@ mutation {
 }
 ```
 
-TBD: More samples will be aded here
+Get list of entries in join table, which enables to define many-to-many relations (and get data of refferenced (one-to-many) object(s)):
+```graphql
+query {
+  taskSprintJunctions (
+    paging: { # Define current paging.
+      offset: 0
+      limit: 10
+    }
+  ) {
+    pageInfo {  # Get current paging info.
+      hasPreviousPage
+      hasNextPage
+    }
+    nodes { # Get the list.
+      task { # Get data of refferenced (one-to-many) object.
+        name
+      }
+      sprint { # Get data of refferenced (one-to-many) object.
+        name
+      }
+    }
+  }
+}
+```
