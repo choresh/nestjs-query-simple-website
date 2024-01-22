@@ -72,13 +72,13 @@ Create single tenant-billing (and get data of refferenced (one-to-one) object):
 mutation {
   createOneTenantBilling(input: {
     tenantBilling: {
-      tenantId: <id of exists tenant>  # Set id of refferenced (one-to-one) tenant (the specified tenant should not have yet a refferenced tenant-billing).
+      tenantId: <id of exists tenant> # Set id of refferenced (one-to-one) tenant (the specified tenant should not have yet a refferenced tenant-billing).
       taxNumber: "taxNumber-1"
       phoneNumber: "phoneNumber-1"
     }
   }) {
     id
-    tenant {  # Get data of refferenced (one-to-one) object.
+    tenant { # Get data of refferenced (one-to-one) object.
      id
       name
     }
@@ -93,19 +93,19 @@ mutation {
     users: [
       { 
         name: "user-1"
-        tenantId: <id of exists tenant>  # Set id of refferenced (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
+        tenantId: <id of exists tenant> # Set id of refferenced (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
         age: 31
         gender: male
       }
       { 
         name: "user-2"
-        tenantId: <id of exists tenant>  # Set id of refferenced (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
+        tenantId: <id of exists tenant> # Set id of refferenced (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
         age: 32
         gender: female
       }
       {
         name: "user-3"
-        tenantId: <id of exists tenant>  # Set id of the (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
+        tenantId: <id of exists tenant> # Set id of the (one-to-many) tenant (the specified tenant should not have yet a refferenced user with same name).
         age: 33
         gender: male
       }
@@ -128,7 +128,7 @@ mutation {
     tasks: [
       { 
         name: "task-1"
-        userId: <id of exists user>  # Set id of refferenced (one-to-many) user.
+        userId: <id of exists user> # Set id of refferenced (one-to-many) user.
         details: { # Set data of embedded object.
           title: "title-1"
           description: "description-1"
@@ -138,8 +138,8 @@ mutation {
       }
       { 
         name: "task-2" 
-        userId: <id of exists user>  # Set id of refferenced (one-to-many) user.
-        details: {  # Set data of embedded object.
+        userId: <id of exists user> # Set id of refferenced (one-to-many) user.
+        details: { # Set data of embedded object.
           title: "title-2"
           description: "description-2"
         }
@@ -148,26 +148,26 @@ mutation {
       }
       { 
         name: "task-3"
-        userId: <id of exists user>  # Set id of refferenced (one-to-many) user.
-        details: {  # Set data of embedded object.
+        userId: <id of exists user> # Set id of refferenced (one-to-many) user.
+        details: { # Set data of embedded object.
           title: "title-3"
           description: "description-3"
         }
-        comments: [  # Set data of embedded objects array.
+        comments: [ # Set data of embedded objects array.
         ]
       }
     ]
   }) {
     id
     name
-    details {  # Get data of embedded object.
+    details { # Get data of embedded object.
       title
       description
     }
     comments { # Get data of embedded objects array.
       text
     }
-    user {  # Get data of refferenced (one-to-many) object.
+    user { # Get data of refferenced (one-to-many) object.
       id
       name
     }
@@ -256,14 +256,14 @@ mutation {
     }
   }) {
     id
-    task {  # Get data of refferenced (one-to-many) object.
+    task { # Get data of refferenced (one-to-many) object.
       id
       details {
         title
         description
       }
     }
-    sprint {  # Get data of refferenced (one-to-many) object.
+    sprint { # Get data of refferenced (one-to-many) object.
       name
     }
   }
@@ -279,7 +279,7 @@ query {
       limit: 10
     }
   ) {
-    pageInfo {  # Get current paging info.
+    pageInfo { # Get current paging info.
       hasPreviousPage
       hasNextPage
     }
@@ -295,13 +295,18 @@ query {
 }
 ```
 
+Update many users:
 ```graphql
 mutation {
   updateManyUsers(
     input: {
       filter: {
-        age: { gt: 25 }
-        gender: {neq: male}
+        age: {
+          gt: 25
+        }
+        gender: {
+          neq: male
+        }
       }
       update: {
         gender: male
