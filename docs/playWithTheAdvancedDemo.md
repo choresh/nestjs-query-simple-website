@@ -188,7 +188,7 @@ query {
       field: age
       direction: ASC
     }]
-    paging: {  # Define current paging.
+    paging: { # Define current paging.
       offset: 0
       limit: 10
     }
