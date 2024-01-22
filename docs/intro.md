@@ -19,7 +19,7 @@ Get started by **using our 'minimal-demo-app'**.
 
 ### Create a local copy of the minimal demo app
 * Clone the [nestjs-query-simple](https://github.com/choresh/nestjs-query-simple) repository.
-* Create a local copy of the sub-folder 'minimal-demo-app'.
+* Create a local copy of the sub-folder 'examples/minimal-demo-app'.
 
 ### Install the app
 Run this command within the app's root folder:
