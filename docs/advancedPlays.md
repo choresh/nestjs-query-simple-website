@@ -204,7 +204,7 @@ query {
       }
       tasks ( # Get data of refferenced (many-to-one) objects.
       	filter: { # Define filter for refferenced objects.
-        userId: {
+          userId: {
             neq: "abc"
           }
         }
