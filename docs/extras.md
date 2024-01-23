@@ -29,7 +29,7 @@ sidebar_position: 7
     $ npm run generate
     ```
 * The generated code will be file 'generatedApi.ts', within the app's root folder.
-* You can add custom mutations/queries in folder 'customOperations' (e.g. versions that not ask to return all the entitie's properties), and after generation - the SDK will expose them.
+* You can add custom mutations/queries in folder 'customOperations' (e.g. versions that not ask to return all the available properties), and after run the generation newly - the SDK will expose them.
 
 ## Manage MongoDB migrations
 Run command in this structure within the app's root folder:
