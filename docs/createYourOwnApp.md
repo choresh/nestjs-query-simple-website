@@ -49,7 +49,7 @@ sidebar_position: 3
 ## Inject a service into another service
 * See [Inject a service into another service examples](https://nestjs-query-simple-website.vercel.app/docs/advancedExamples#inject-a-service-into-another-service-examples).
 
-## Use your app
+## Use the app
 * Install/build/run/use your app, in the same manner as explained in the [Intro](https://nestjs-query-simple-website.vercel.app/docs/intro) page.
 * Obviously you need to prepare/test your own mutations and queries at GraphQL playground.
 * Validate that the corresponding collection is updated in your MongoDB.
@@ -73,7 +73,7 @@ sidebar_position: 3
     })
     ```
 
-## Test your app
+## Test the app
 Run those commands within the app's root folder:
 ```bash
 # unit tests
@@ -86,7 +86,7 @@ npm run test:e2e
 npm run test:cov
 ```
 
-## Running the app
+## Run the app
 Run those commands within the app's root folder:
 ``` bash
 # development
