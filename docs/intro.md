@@ -10,11 +10,9 @@ Let's discover **'nestjs-query-simple' in less than 5 minutes**.
 Get started by **using our 'minimal-demo-app'**.
 
 ### What you'll need
-
 - [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
   - When installing Node.js, it's recommended to check all checkboxes related to dependencies.
-- [MongoDB](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/).
-- [Compass](https://www.mongodb.com/products/compass) (recommended).
+- [MongoDB (+Compass)](https://www.mongodb.com/docs/manual/administration/install-community/).
 - Any tool to execute the commands given below (Powershell, Terminal, or any other integrated terminal of your code editor).
 
 ### Create a local copy of the minimal demo app
