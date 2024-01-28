@@ -27,6 +27,7 @@ sidebar_position: 1
 ### Type Aliases
 
 - [DatoDoc](modules.md#datodoc)
+- [DtoType](modules.md#dtotype)
 - [LogFunction](modules.md#logfunction)
 - [PropScope](modules.md#propscope)
 
@@ -34,9 +35,8 @@ sidebar_position: 1
 
 - [Dato](modules.md#dato)
 - [DatoProp](modules.md#datoprop)
+- [Dto](modules.md#dto)
 - [DtoProp](modules.md#dtoprop)
-- [InputDto](modules.md#inputdto)
-- [UpdateDto](modules.md#updatedto)
 
 ## Type Aliases
 
@@ -56,6 +56,20 @@ Contains fetched data along with Typegoose methods (e.g. 'save()').
 #### Defined in
 
 [src/bases/identifiableDato.ts:11](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/bases/identifiableDato.ts#L11)
+
+___
+
+### DtoType
+
+Ƭ **DtoType**: ``"input"`` \| ``"update"``
+
+Possible types of a DTO.
+* input: the DTO contains data for creation of new MongoDB document.
+* update: the DTO contains data for updating of exists MongoDB document.
+
+#### Defined in
+
+[src/decorators/dto.ts:8](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dto.ts#L8)
 
 ___
 
@@ -152,6 +166,31 @@ Decorator that marks a property as:
 
 ___
 
+### Dto
+
+▸ **Dto**(`name`, `type`): `ClassDecorator`
+
+Decorator that marks a class as a GraphQL input/update DTO type.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | The dto name, as exposed by GraphQL ('Input' or 'Update' suffix will be added automaticly, according the 'type' parameter). |
+| `type` | [`DtoType`](modules.md#dtotype) | The dto type (input: the DTO contains data for creation of new MongoDB document, update: the DTO contains data for updating of exists MongoDB document). |
+
+#### Returns
+
+`ClassDecorator`
+
+- The decorator function.
+
+#### Defined in
+
+[src/decorators/dto.ts:16](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dto.ts#L16)
+
+___
+
 ### DtoProp
 
 ▸ **DtoProp**(`options?`): (`target`: `any`, `key`: `string`) => `void`
@@ -185,52 +224,4 @@ Decorator that marks a property as a GraphQL input DTO property.
 
 #### Defined in
 
-[src/decorators/dtoProp.ts:25](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dtoProp.ts#L25)
-
-___
-
-### InputDto
-
-▸ **InputDto**(`name`): `ClassDecorator`
-
-Decorator that marks a class as a GraphQL input DTO type.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | The dto name, as exposed by GraphQL ('Input' suffix will be added automaticly). |
-
-#### Returns
-
-`ClassDecorator`
-
-- The decorator function.
-
-#### Defined in
-
-[src/decorators/dto.ts:8](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dto.ts#L8)
-
-___
-
-### UpdateDto
-
-▸ **UpdateDto**(`name`): `ClassDecorator`
-
-Decorator that marks a class as a GraphQL update DTO type.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | The dto name, as exposed by GraphQL ('Update' suffix will be added automaticly). |
-
-#### Returns
-
-`ClassDecorator`
-
-- The decorator function.
-
-#### Defined in
-
-[src/decorators/dto.ts:19](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/decorators/dto.ts#L19)
+[src/decorators/dtoProp.ts:25](https://github.com/choresh/nestjs-query-simple/blob/3d8defb/packages/nestjs-query-simple/src/decorators/dtoProp.ts#L25)
