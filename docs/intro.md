@@ -32,7 +32,7 @@ npm run build
 ```
 
 ### Run the app
-Run this commands within the app's root folder:
+Run this command within the app's root folder:
 ``` bash
 npm run start
 ```
