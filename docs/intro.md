@@ -15,9 +15,9 @@ Get started by **using our 'minimal-demo-app'**.
 - [MongoDB (+Compass)](https://www.mongodb.com/docs/manual/administration/install-community/).
 - Any tool to execute the commands given below (Powershell, Terminal, or any other integrated terminal of your code editor).
 
-### Create a local copy of the minimal demo app
+### Get the minimal demo app
 * Clone the [nestjs-query-simple](https://github.com/choresh/nestjs-query-simple) repository.
-* Create a local copy of the sub-folder 'examples/minimal-demo-app'.
+* Locate the sub-folder 'examples/minimal-demo-app, all explanations below refer to this app.
 
 ### Install the app
 Run this command within the app's root folder:

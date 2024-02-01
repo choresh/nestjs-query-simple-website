@@ -4,8 +4,9 @@ sidebar_position: 3
 
 # Create your own app
 
-## Fix app name
+## Scaffolding
 * Read and apply steps explained in the [Intro](https://nestjs-query-simple-website.vercel.app/docs/intro) page.
+* Create your own copy of the sub-folder 'examples/minimal-demo-app'.
 * In the 'package.json' file (at the app's root folder) - replace values of name, author, etc.
 
 ## Fix resource name

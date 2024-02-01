@@ -17,9 +17,9 @@ Get started by **using our 'advanced-demo-app'**.
 - [Compass](https://www.mongodb.com/products/compass) (recommended).
 - Any tool to execute the commands given below (Powershell, Terminal, or any other integrated terminal of your code editor).
 
-### Create a local copy of the advanced demo app
+### Get the advanced demo app
 * Clone the [nestjs-query-simple](https://github.com/choresh/nestjs-query-simple) repository.
-* Create a local copy of the sub-folder 'examples/advanced-demo-app'.
+* Locate the sub-folder 'examples/advanced-demo-app, all explanations below refer to this app.
 
 ### Install the app
 Run this command within the app's root folder:
