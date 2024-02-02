@@ -2,6 +2,8 @@
 
 # Class: AppCommonModule
 
+Class that contains methods to import/configure GraphQL and MongoDB modules.
+
 ## Table of contents
 
 ### Constructors
@@ -10,7 +12,6 @@
 
 ### Methods
 
-- [\_setLogger](AppCommonModule.md#_setlogger)
 - [forRoot](AppCommonModule.md#forroot)
 - [forRootAsync](AppCommonModule.md#forrootasync)
 
@@ -26,31 +27,11 @@
 
 ## Methods
 
-### \_setLogger
-
-▸ **_setLogger**(`logger`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `logger` | [`Logger`](../interfaces/Logger.md) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/modules/appCommon.module.ts:88](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/modules/appCommon.module.ts#L88)
-
-___
-
 ### forRoot
 
 ▸ **forRoot**(`uri`, `logger?`): `DynamicModule`
 
-Creates a DynamicModule for the app with the provided options.
+Import/configure GraphQL and MongoDB modules.
 
 #### Parameters
 
@@ -69,7 +50,7 @@ The configured DynamicModule.
 
 #### Defined in
 
-[src/modules/appCommon.module.ts:46](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/modules/appCommon.module.ts#L46)
+[src/modules/appCommon.module.ts:54](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/modules/appCommon.module.ts#L54)
 
 ___
 
@@ -77,7 +58,7 @@ ___
 
 ▸ **forRootAsync**(`options`): `DynamicModule`
 
-Creates a DynamicModule for the app with the provided options.
+Import/configure GraphQL and MongoDB modules.
 
 #### Parameters
 
@@ -95,4 +76,4 @@ The configured DynamicModule.
 
 #### Defined in
 
-[src/modules/appCommon.module.ts:68](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/modules/appCommon.module.ts#L68)
+[src/modules/appCommon.module.ts:76](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/modules/appCommon.module.ts#L76)
