@@ -1,5 +1,3 @@
-[nestjs-query-simple](../README.md) / [Exports](../modules.md) / AppCommonModule
-
 # Class: AppCommonModule
 
 Class that contains methods to import/configure GraphQL and MongoDB modules.
