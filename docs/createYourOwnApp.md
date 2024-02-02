@@ -61,11 +61,7 @@ sidebar_position: 3
     ``` ts
     @Module({
     imports: [
-        AppHelper.forRoot('mongodb://localhost', console),
-        GraphQLModule.forRoot<ApolloDriverConfig>({
-        driver: ApolloDriver,
-        autoSchemaFile: true
-        }),
+        AppCommonModule.forRoot('mongodb://localhost', console),
         ExampleItemsModule, // You probebly already replaced 'ExampleItem' with another name.
         // Add here your new resource's module.
     ],

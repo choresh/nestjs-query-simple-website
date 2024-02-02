@@ -6,13 +6,14 @@ sidebar_position: 1
 
 ### Classes
 
-- [AppHelper](classes/AppHelper.md)
+- [AppCommonModule](classes/AppCommonModule.md)
 - [IdentifiableDato](classes/IdentifiableDato.md)
 - [ResourceHelper](classes/ResourceHelper.md)
 - [ServiceBase](classes/ServiceBase.md)
 
 ### Interfaces
 
+- [AppAsyncOptions](interfaces/AppAsyncOptions.md)
 - [DatoOptions](interfaces/DatoOptions.md)
 - [DatoPropOptions](interfaces/DatoPropOptions.md)
 - [DtoPropOptions](interfaces/DtoPropOptions.md)
@@ -21,7 +22,6 @@ sidebar_position: 1
 - [ModuleOpts](interfaces/ModuleOpts.md)
 - [OneToMany](interfaces/OneToMany.md)
 - [OneToOne](interfaces/OneToOne.md)
-- [Options](interfaces/Options.md)
 - [Relation](interfaces/Relation.md)
 
 ### Type Aliases
@@ -96,7 +96,7 @@ Represents a function that logs messages.
 
 #### Defined in
 
-[src/helpers/appHelper.ts:13](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/helpers/appHelper.ts#L13)
+[src/modules/appCommon.module.ts:15](https://github.com/choresh/nestjs-query-simple/blob/main/packages/nestjs-query-simple/src/modules/appCommon.module.ts#L15)
 
 ___
 
