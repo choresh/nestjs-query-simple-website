@@ -19,7 +19,7 @@ sidebar_position: 4
   * **UserDato.tenant**: `many-to-one` relation with **TenantDato**.
   * **UserDato.tasks**: `one-to-many` relation with **TaskDato**.
   * **TaskDato.taskSprintJunctions**: `many-to-many` relation with **SprintDato** (via join table **TaskSprintJunctionsDato**).
-  * **SprintkDato.taskSprintJunctions**: `many-to-many` relation with **TaskDato** (via join table **TaskSprintJunctionsDato**).
+  * **SprintDato.taskSprintJunctions**: `many-to-many` relation with **TaskDato** (via join table **TaskSprintJunctionsDato**).
 * Cases of **Embedded** relations in the demo:
   * **TaskDato.details**: embed a single **TaskDetailsDato**.
   * **TaskDato.comments**: embed an array of **TaskCommentDato**.
