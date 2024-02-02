@@ -38,7 +38,7 @@ sidebar_position: 5
 * Resource service: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenants/tenants.service.ts#L7-L12).
 * Resource resolver: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenants/tenants.resolver.ts#L7-L14).
 * Resource module: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/tenants/tenants.module.ts#L7-L15).
-* App module: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/app.module.ts#L12-L28).
+* App module: [here](https://github.com/choresh/nestjs-query-simple/blob/main/examples/advanced-demo-app/src/app.module.ts#L10-L22).
 
 ## Create custom mutations/queries examples
 The 'nestjs-query-simple' package inherently supports standard CRUD operations. If you intend to include custom mutations or queries, refer to the 'demonstrateComplexQuery()' example method:
