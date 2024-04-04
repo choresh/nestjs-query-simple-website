@@ -14,7 +14,6 @@ Get started by **using our 'advanced-demo-app'**.
 - [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
   - When installing Node.js, it's recommended to check all checkboxes related to dependencies.
 - [MongoDB (+Compass)](https://www.mongodb.com/docs/manual/administration/install-community/).
-- [Compass](https://www.mongodb.com/products/compass) (recommended).
 - Any tool to execute the commands given below (Powershell, Terminal, or any other integrated terminal of your code editor).
 
 ### Get the advanced demo app
