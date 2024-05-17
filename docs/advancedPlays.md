@@ -15,6 +15,7 @@ Get started by **using our 'advanced-demo-app'**.
   - When installing Node.js, it's recommended to check all checkboxes related to dependencies.
 - [MongoDB (+Compass)](https://www.mongodb.com/docs/manual/administration/install-community/).
 - Any tool to execute the commands given below (Powershell, Terminal, or any other integrated terminal of your code editor).
+- [vc-redist](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) - only at Windows OS.
 
 ### Get the advanced demo app
 * Clone the [nestjs-query-simple](https://github.com/choresh/nestjs-query-simple) repository.
